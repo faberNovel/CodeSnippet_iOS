@@ -5,18 +5,18 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>An empty Swift file.</string>
+	<string>Set of conviente CoreData methods.</string>
 	<key>Summary</key>
-	<string>An empty Swift file</string>
+	<string>Set of conviente CoreData methods.</string>
 	<key>SortOrder</key>
-	<string>30</string>
+	<string>1</string>
 	<key>AllowedTypes</key>
 	<array>
 		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>File</string>
+	<string>CoreDataEntity</string>
 	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.swift</string>
+	<string>CoreDataEntity.swift</string>
 </dict>
 </plist>

@@ -5,9 +5,9 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>Set of conviente CoreData methods.</string>
+	<string>CoreData basic stack.</string>
 	<key>Summary</key>
-	<string>Set of conviente CoreData methods.</string>
+	<string>CoreData basic stack.</string>
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>AllowedTypes</key>
@@ -15,8 +15,8 @@
 		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>CoreDataEntity</string>
+	<string>CoreDataStack</string>
 	<key>MainTemplateFile</key>
-	<string>CoreDataEntity.swift</string>
+	<string>CoreDataStack.swift</string>
 </dict>
 </plist>

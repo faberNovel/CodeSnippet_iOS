@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175CEC1ACAFD786FE07815E7 /* Pods_XCTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E16C169C770ADA1D8004C9 /* Pods_XCTemplate.framework */; };
 		E79BA1D3245C7D4F00ADF618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BA1D0245C7D4F00ADF618 /* LaunchScreen.storyboard */; };
 		E79BA1D4245C7D4F00ADF618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA1D1245C7D4F00ADF618 /* AppDelegate.swift */; };
 		E7A83EAA246EA30200A0F8D8 /* UserDefaults+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A83EA9246EA30200A0F8D8 /* UserDefaults+Key.swift */; };
 		E7D51ED824865F1E005ABE91 /* CoreDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D51ED624865F1E005ABE91 /* CoreDataObject.swift */; };
 		E7D51ED924865F1E005ABE91 /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D51ED724865F1E005ABE91 /* CoreDataContainer.swift */; };
+		E7DEB58224868D4800109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB57E24868D4800109C0F /* CognitoAuthentication.swift */; };
+		E7DEB58324868D4800109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB57F24868D4800109C0F /* CognitoEnvironment.swift */; };
+		E7DEB58424868D4800109C0F /* AuthenticationMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB58024868D4800109C0F /* AuthenticationMetadata.swift */; };
+		E7DEB58524868D4800109C0F /* UnauthorizedRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB58124868D4800109C0F /* UnauthorizedRequestRetrier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0D9B36CC14069DF0B94AC33 /* Pods-XCTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCTemplate.release.xcconfig"; path = "Target Support Files/Pods-XCTemplate/Pods-XCTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		DFBD63C76FC61E9F81DD7670 /* Pods-XCTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCTemplate.debug.xcconfig"; path = "Target Support Files/Pods-XCTemplate/Pods-XCTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		E79BA199245C755300ADF618 /* XCTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA1C2245C76B500ADF618 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E79BA1C3245C76B500ADF618 /* UserDefaults+Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
@@ -26,11 +33,23 @@
 		E7A83EA9246EA30200A0F8D8 /* UserDefaults+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
 		E7D51ED624865F1E005ABE91 /* CoreDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataObject.swift; sourceTree = "<group>"; };
 		E7D51ED724865F1E005ABE91 /* CoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
+		E7D51EDE248675EF005ABE91 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7D51EDF248675EF005ABE91 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7D51EE0248675EF005ABE91 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		E7D51EE4248678A8005ABE91 /* CognitoAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
+		E7D51EE5248678A8005ABE91 /* AuthenticationMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationMetadata.swift; sourceTree = "<group>"; };
+		E7DEB57A24868A5B00109C0F /* CognitoEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoEnvironment.swift; sourceTree = "<group>"; };
+		E7DEB57C24868ABF00109C0F /* UnauthorizedRequestRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedRequestRetrier.swift; sourceTree = "<group>"; };
+		E7DEB57E24868D4800109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
+		E7DEB57F24868D4800109C0F /* CognitoEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoEnvironment.swift; sourceTree = "<group>"; };
+		E7DEB58024868D4800109C0F /* AuthenticationMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationMetadata.swift; sourceTree = "<group>"; };
+		E7DEB58124868D4800109C0F /* UnauthorizedRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthorizedRequestRetrier.swift; sourceTree = "<group>"; };
 		E7E76E15245FF88B00EA1C14 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7E76E16245FF88B00EA1C14 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7E76E17245FF88B00EA1C14 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7E76E18245FF88B00EA1C14 /* CoreDataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
 		E7E76E1B245FF88B00EA1C14 /* CoreDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataObject.swift; sourceTree = "<group>"; };
+		F1E16C169C770ADA1D8004C9 /* Pods_XCTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,18 +57,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175CEC1ACAFD786FE07815E7 /* Pods_XCTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DABB66CC22A35B3C0728EF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD63C76FC61E9F81DD7670 /* Pods-XCTemplate.debug.xcconfig */,
+				C0D9B36CC14069DF0B94AC33 /* Pods-XCTemplate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D74547F891A63A8EF34A75FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1E16C169C770ADA1D8004C9 /* Pods_XCTemplate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E79BA190245C755300ADF618 = {
 			isa = PBXGroup;
 			children = (
 				E79BA1CF245C7D4F00ADF618 /* Example */,
 				E79BA19B245C755300ADF618 /* XCTemplate */,
 				E79BA19A245C755300ADF618 /* Products */,
+				9DABB66CC22A35B3C0728EF0 /* Pods */,
+				D74547F891A63A8EF34A75FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +103,7 @@
 		E79BA19B245C755300ADF618 /* XCTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E7D51EDA248675CA005ABE91 /* Module */,
 				E79BA1C0245C76B500ADF618 /* Data */,
 			);
 			path = XCTemplate;
@@ -92,6 +132,7 @@
 		E79BA1CF245C7D4F00ADF618 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				E7D51EE324867875005ABE91 /* Module */,
 				E7A83EA8246EA2B200A0F8D8 /* Data */,
 				E79BA1D0245C7D4F00ADF618 /* LaunchScreen.storyboard */,
 				E79BA1D1245C7D4F00ADF618 /* AppDelegate.swift */,
@@ -108,6 +149,39 @@
 				E7D51ED724865F1E005ABE91 /* CoreDataContainer.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E7D51EDA248675CA005ABE91 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E7D51EDB248675E3005ABE91 /* ADCognitoStack.xctemplate */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E7D51EDB248675E3005ABE91 /* ADCognitoStack.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E7DEB57A24868A5B00109C0F /* CognitoEnvironment.swift */,
+				E7D51EE4248678A8005ABE91 /* CognitoAuthentication.swift */,
+				E7D51EE5248678A8005ABE91 /* AuthenticationMetadata.swift */,
+				E7DEB57C24868ABF00109C0F /* UnauthorizedRequestRetrier.swift */,
+				E7D51EDE248675EF005ABE91 /* TemplateIcon@2x.png */,
+				E7D51EE0248675EF005ABE91 /* TemplateIcon.png */,
+				E7D51EDF248675EF005ABE91 /* TemplateInfo.plist */,
+			);
+			path = ADCognitoStack.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7D51EE324867875005ABE91 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E7DEB57E24868D4800109C0F /* CognitoAuthentication.swift */,
+				E7DEB57F24868D4800109C0F /* CognitoEnvironment.swift */,
+				E7DEB58024868D4800109C0F /* AuthenticationMetadata.swift */,
+				E7DEB58124868D4800109C0F /* UnauthorizedRequestRetrier.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		E7E76E14245FF88B00EA1C14 /* ADCoreDataStack.xctemplate */ = {
@@ -129,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E79BA1AD245C755400ADF618 /* Build configuration list for PBXNativeTarget "XCTemplate" */;
 			buildPhases = (
+				E6ACA1437DF09A78BA3095BA /* [CP] Check Pods Manifest.lock */,
 				E79BA195245C755300ADF618 /* Sources */,
 				E79BA196245C755300ADF618 /* Frameworks */,
 				E79BA197245C755300ADF618 /* Resources */,
+				F13AC51D41F6A13420FB054C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,14 +262,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E6ACA1437DF09A78BA3095BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XCTemplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13AC51D41F6A13420FB054C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCTemplate/Pods-XCTemplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCTemplate/Pods-XCTemplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XCTemplate/Pods-XCTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E79BA195245C755300ADF618 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7DEB58424868D4800109C0F /* AuthenticationMetadata.swift in Sources */,
+				E7DEB58224868D4800109C0F /* CognitoAuthentication.swift in Sources */,
+				E7DEB58324868D4800109C0F /* CognitoEnvironment.swift in Sources */,
 				E7D51ED924865F1E005ABE91 /* CoreDataContainer.swift in Sources */,
 				E7A83EAA246EA30200A0F8D8 /* UserDefaults+Key.swift in Sources */,
 				E7D51ED824865F1E005ABE91 /* CoreDataObject.swift in Sources */,
+				E7DEB58524868D4800109C0F /* UnauthorizedRequestRetrier.swift in Sources */,
 				E79BA1D4245C7D4F00ADF618 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +439,7 @@
 		};
 		E79BA1AE245C755400ADF618 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBD63C76FC61E9F81DD7670 /* Pods-XCTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +458,7 @@
 		};
 		E79BA1AF245C755400ADF618 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D9B36CC14069DF0B94AC33 /* Pods-XCTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

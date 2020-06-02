@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.2.1)
+  - AWSCognitoAuth (2.13.4):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - AWSCognitoAuth (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AWSCognitoAuth
+    - AWSCognitoIdentityProviderASF
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  AWSCognitoAuth: 9533cc4f1fe2762b3b328ff417c969d6cc8bb08f
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+
+PODFILE CHECKSUM: 173230cc4e05ecb4238576aedb92fc380225fb87
+
+COCOAPODS: 1.9.3

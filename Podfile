@@ -1,7 +1,7 @@
 
 platform :ios, '13.0'
 
-target 'XCTemplate' do
+target 'CodeSnippet' do
 
   use_frameworks!
   pod 'Alamofire', '~> 5.2'

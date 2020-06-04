@@ -49,6 +49,9 @@
 		E7DEB5D22488E64400109C0F /* UserDefaults+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
 		E7DEB5D32488E64400109C0F /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7DEB5D42488E64400109C0F /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7DEB5D82488E7A300109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7DEB5D92488E7AB00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7DEB5DA2488E7AD00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EDD6EC3DBD754B25AB8FDC41 /* Pods-CodeSnippet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippet.release.xcconfig"; path = "Target Support Files/Pods-CodeSnippet/Pods-CodeSnippet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +197,7 @@
 		E7DEB5D52488E68B00109C0F /* ADCognitoStack */ = {
 			isa = PBXGroup;
 			children = (
+				E7DEB5D82488E7A300109C0F /* README.md */,
 				E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */,
 				E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */,
 				E7DEB5AC2488E20400109C0F /* AuthenticationMetadata.swift */,
@@ -205,6 +209,7 @@
 		E7DEB5D62488E69700109C0F /* ADCoreDataStack */ = {
 			isa = PBXGroup;
 			children = (
+				E7DEB5D92488E7AB00109C0F /* README.md */,
 				E7DEB5B02488E20400109C0F /* CoreDataObject.swift */,
 				E7DEB5B12488E20400109C0F /* CoreDataContainer.swift */,
 			);
@@ -214,6 +219,7 @@
 		E7DEB5D72488E6A300109C0F /* ADUserDefaults+Key */ = {
 			isa = PBXGroup;
 			children = (
+				E7DEB5DA2488E7AD00109C0F /* README.md */,
 				E7DEB5AF2488E20400109C0F /* UserDefaults+Key.swift */,
 			);
 			path = "ADUserDefaults+Key";

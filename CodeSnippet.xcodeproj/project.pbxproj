@@ -52,6 +52,7 @@
 		E7DEB5D82488E7A300109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5D92488E7AB00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5DA2488E7AD00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7DEB5DB2488E96B00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EDD6EC3DBD754B25AB8FDC41 /* Pods-CodeSnippet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippet.release.xcconfig"; path = "Target Support Files/Pods-CodeSnippet/Pods-CodeSnippet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +79,7 @@
 		E7DEB5872488E0EB00109C0F = {
 			isa = PBXGroup;
 			children = (
+				E7DEB5DB2488E96B00109C0F /* README.md */,
 				E7DEB5A72488E20400109C0F /* CodeSnippet */,
 				E7DEB5BF2488E64400109C0F /* XCTemplate */,
 				E7DEB5BC2488E3E300109C0F /* Configuration */,

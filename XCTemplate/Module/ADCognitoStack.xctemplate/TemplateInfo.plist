@@ -5,9 +5,9 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>NSPersistentStore launcher.</string>
+	<string>Cognito stack.</string>
 	<key>Summary</key>
-	<string>NSPersistentStore launcher.</string>
+	<string>Cognito stack.</string>
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>AllowedTypes</key>
@@ -15,8 +15,8 @@
 		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>CoreDataContainer</string>
+	<string>Cognito</string>
 	<key>MainTemplateFile</key>
-	<string>CoreDataContainer.swift</string>
+	<string>CognitoStack.swift</string>
 </dict>
 </plist>

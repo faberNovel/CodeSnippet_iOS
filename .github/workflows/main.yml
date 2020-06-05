@@ -1,0 +1,18 @@
+
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Bundle install
+      working-directory: ./
+      run: bundle install
+
+    - name: Build project
+      run: bundle exec fastlane build

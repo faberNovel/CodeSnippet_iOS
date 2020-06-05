@@ -6,7 +6,7 @@ Code snippets are a way to share iOS practices and facilitate their integration 
 
 ### Browse snippets
 
-You can browse code snippets in the [CodeSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/CodeSnippet) folder. Each snippet resides in its dedicated folder and provides a `README` file.
+You can browse code snippets in the [CodeSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet) folder. Each snippet resides in its dedicated folder and provides a `README` file.
 
 ### Use snippets in Xcode
 

@@ -1,0 +1,19 @@
+
+default_platform(:ios)
+
+before_all do
+  ensure_git_status_clean
+end
+
+platform :ios do
+    desc "Build project"
+    lane :build do
+        cocoapods(
+            podfile: "./"
+        )
+        xcodebuild(
+            scheme: ENV["SCHEME"],
+            workspace: ENV["WORKSPACE"]
+        )
+    end
+end

@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E7DEB5DB2488E96B00109C0F /* README.md */,
-				E7DEB5A72488E20400109C0F /* CodeSnippet */,
+				E7DEB5A72488E20400109C0F /* Source */,
 				E7DEB5BF2488E64400109C0F /* XCTemplate */,
 				E7DEB5BC2488E3E300109C0F /* Configuration */,
 				E7DEB5912488E0EB00109C0F /* Products */,
@@ -97,15 +97,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7DEB5A72488E20400109C0F /* CodeSnippet */ = {
+		E7DEB5A72488E20400109C0F /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				E7DEB5BA2488E21200109C0F /* AppDelegate.swift */,
 				E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */,
-				E7DEB5A92488E20400109C0F /* Module */,
-				E7DEB5AE2488E20400109C0F /* Data */,
+				E7DEB5DC248A331600109C0F /* CodeSnippet */,
 			);
-			path = CodeSnippet;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E7DEB5A92488E20400109C0F /* Module */ = {
@@ -225,6 +224,15 @@
 				E7DEB5AF2488E20400109C0F /* UserDefaults+Key.swift */,
 			);
 			path = "ADUserDefaults+Key";
+			sourceTree = "<group>";
+		};
+		E7DEB5DC248A331600109C0F /* CodeSnippet */ = {
+			isa = PBXGroup;
+			children = (
+				E7DEB5A92488E20400109C0F /* Module */,
+				E7DEB5AE2488E20400109C0F /* Data */,
+			);
+			path = CodeSnippet;
 			sourceTree = "<group>";
 		};
 		F4F0287920ABD67EACED7268 /* Pods */ = {

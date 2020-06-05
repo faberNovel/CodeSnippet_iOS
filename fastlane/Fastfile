@@ -13,6 +13,7 @@ platform :ios do
         )
         xcodebuild(
             scheme: ENV["SCHEME"],
+            xcargs: "CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS= CODE_SIGN_IDENTITY= -quiet",
             workspace: ENV["WORKSPACE"]
         )
     end

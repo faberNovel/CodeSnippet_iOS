@@ -26,6 +26,12 @@ Build project
 fastlane ios generate_summary
 ```
 Generate code snippets summary
+### ios ensure_project_integrity
+```
+fastlane ios ensure_project_integrity
+```
+Ensure project integrity
+The template and snippet folder hierarchies should be egal.
 
 ----
 

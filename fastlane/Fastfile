@@ -1,13 +1,10 @@
 
 default_platform(:ios)
 
-before_all do
-  ensure_git_status_clean
-end
-
 platform :ios do
     desc "Build project"
     lane :build do
+        ensure_git_status_clean
         cocoapods(
             podfile: "./"
         )
@@ -16,5 +13,49 @@ platform :ios do
             xcargs: "CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS= CODE_SIGN_IDENTITY= -quiet",
             workspace: ENV["WORKSPACE"]
         )
+    end
+
+    desc "Generate code snippets summary"
+    lane :generate_summary do
+        in_folder("..") do
+            snippet_folder = "Source/CodeSnippet"
+            File.open("CodeSnippet.md", "w") do |handle|
+                handle.truncate(0)
+                write_folder_hierarchy(snippet_folder, handle, 0)
+            end
+        end
+    end
+
+    def write_folder_hierarchy(current, file_handle, indentation_level)
+        folder_name = File.basename(current)
+        readme_path = "#{current}/README.md"
+        if (File.exist?(readme_path))
+            base_url = "https://github.com/fabernovel/CodeSnippet_iOS/tree/master"
+            readme_link = "[#{folder_name}](#{base_url}/#{readme_path})"
+            indented_puts(file_handle, readme_link, indentation_level)
+        else
+            indented_puts(file_handle, folder_name, indentation_level)
+            subfolders = Dir["#{current}/*"]
+            subfolders.each do |directory|
+                write_folder_hierarchy(directory, file_handle, indentation_level + 1)
+            end
+        end
+    end
+
+    def indented_puts(file_handle, data, level)
+        if (level > 0)
+            indentation = "    " * (level - 1)
+            file_handle.puts(indentation + "* " + data)
+        else
+            file_handle.puts("# #{data}")
+            file_handle.puts("\n")
+        end
+    end
+
+    def in_folder(folder)
+        current = Dir.pwd
+        Dir.chdir(folder)
+        yield
+        Dir.chdir(current)
     end
 end

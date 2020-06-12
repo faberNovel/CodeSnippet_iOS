@@ -17,6 +17,7 @@
 		E7DEB5B82488E20400109C0F /* CoreDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5B02488E20400109C0F /* CoreDataObject.swift */; };
 		E7DEB5B92488E20400109C0F /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5B12488E20400109C0F /* CoreDataContainer.swift */; };
 		E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5BA2488E21200109C0F /* AppDelegate.swift */; };
+		E7F0BC5B2493B24F00D39411 /* CodeSnippet.md in Resources */ = {isa = PBXBuildFile; fileRef = E7F0BC5A2493B24E00D39411 /* CodeSnippet.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		E7DEB5D92488E7AB00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5DA2488E7AD00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5DB2488E96B00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7F0BC5A2493B24E00D39411 /* CodeSnippet.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CodeSnippet.md; sourceTree = "<group>"; };
 		EDD6EC3DBD754B25AB8FDC41 /* Pods-CodeSnippet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippet.release.xcconfig"; path = "Target Support Files/Pods-CodeSnippet/Pods-CodeSnippet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				E7DEB5DB2488E96B00109C0F /* README.md */,
+				E7F0BC5A2493B24E00D39411 /* CodeSnippet.md */,
 				E7DEB5A72488E20400109C0F /* Source */,
 				E7DEB5BF2488E64400109C0F /* XCTemplate */,
 				E7DEB5BC2488E3E300109C0F /* Configuration */,
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */,
+				E7F0BC5B2493B24F00D39411 /* CodeSnippet.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

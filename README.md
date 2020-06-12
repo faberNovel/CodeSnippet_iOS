@@ -74,7 +74,7 @@ Create the snippet folder and create your code snippet inside it using the snipp
 
 ### Publish your snippet
 
-Create a PR once you are done. Thanks for contributing 😊
+Run `bundle exec fastlane generate_summary` to update the `CodeSnippet.md` file. Create a PR once you are done. Thanks for contributing! 😊
 
 > You must be in the Fabernovel Github team for contributing.
 

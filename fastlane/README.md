@@ -21,6 +21,17 @@ or alternatively using `brew cask install fastlane`
 fastlane ios build
 ```
 Build project
+### ios generate_summary
+```
+fastlane ios generate_summary
+```
+Generate code snippets summary
+### ios ensure_project_integrity
+```
+fastlane ios ensure_project_integrity
+```
+Ensure project integrity
+The template and snippet folder hierarchies should be egal.
 
 ----
 

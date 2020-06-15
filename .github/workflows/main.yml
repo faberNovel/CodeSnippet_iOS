@@ -16,3 +16,6 @@ jobs:
 
     - name: Build project
       run: bundle exec fastlane build
+
+    - name: Check project integrity
+      run: bundle exec fastlane ensure_project_integrity

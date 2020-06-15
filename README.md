@@ -6,7 +6,7 @@ Code snippets are a way to share iOS practices and facilitate their integration 
 
 ### Browse snippets
 
-You can browse code snippets in the [CodeSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet) folder. Each snippet resides in its dedicated folder and provides a `README` file.
+You can browse code snippets in the [CodeSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/CodeSnippet.md) folder. Each snippet resides in its dedicated folder and provides a `README` file.
 
 ### Use snippets in Xcode
 
@@ -74,7 +74,7 @@ Create the snippet folder and create your code snippet inside it using the snipp
 
 ### Publish your snippet
 
-Create a PR once you are done. Thanks for contributing 😊
+Run `bundle exec fastlane generate_summary` to update the `CodeSnippet.md` file. Create a PR once you are done. Thanks for contributing! 😊
 
 > You must be in the Fabernovel Github team for contributing.
 

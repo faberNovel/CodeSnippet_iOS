@@ -1,13 +1,10 @@
 
 default_platform(:ios)
 
-before_all do
-  ensure_git_status_clean
-end
-
 platform :ios do
     desc "Build project"
     lane :build do
+        ensure_git_status_clean
         cocoapods(
             podfile: "./"
         )
@@ -16,5 +13,155 @@ platform :ios do
             xcargs: "CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS= CODE_SIGN_IDENTITY= -quiet",
             workspace: ENV["WORKSPACE"]
         )
+    end
+
+    desc "Generate code snippets summary"
+    lane :generate_summary do
+        in_folder("..") do
+            summary_path = "CodeSnippet.md"
+            File.open(summary_path, "w") do |handle|
+                handle.truncate(0)
+                write_folder_hierarchy(snippet_root(), handle, 0)
+            end
+            UI.important "#{summary_path} generated 🎉"
+        end
+    end
+
+    desc "Ensure project integrity\nThe template and snippet folder hierarchies should be egal."
+    lane :ensure_project_integrity do
+        in_folder("..") do
+            recursively_ensure_snippet_folder_integrity(snippet_root())
+            recursively_ensure_template_folder_integrity(template_root())
+        end
+        UI.important "Project is clean 🎉"
+    end
+
+    def recursively_ensure_template_folder_integrity(current)
+        if (is_template?(current))
+            ensure_snippet_exist(current)
+        else
+            ensure_snippet_folder_exist(current)
+        end
+        subelements = Dir["#{current}/*"]
+        subfolders = subelements.select { |f| File.directory?(f) }
+        subfolders.each do |folder|
+            recursively_ensure_template_folder_integrity(folder)
+        end
+    end
+
+    def recursively_ensure_snippet_folder_integrity(current)
+        folder_name = File.basename(current)
+        readme_path = "#{current}/README.md"
+        subelements = Dir["#{current}/*"]
+        subfolders = subelements.select { |f| File.directory?(f) }
+        files = subelements.select { |f| File.file?(f) }
+        has_subfolders = !subfolders.empty?
+        has_files = !files.empty?
+        is_snippet_folder = has_files && !has_subfolders
+        is_empty = !has_files && !has_subfolders
+        if (is_empty)
+            UI.crash! "#{current} should not be empty"
+        elsif (is_snippet_folder)
+            readme_path =  readme_path(current)
+            if (!File.exist?(readme_path))
+                UI.crash! "README file is missing at #{readme_path}"
+            end
+            ensure_template_exist(current)
+            UI.message "> #{folder_name} ✅"
+        elsif  (has_subfolders && has_files)
+            UI.crash! "A snippet folder can not have subfolders at #{current}\nfiles: #{files}\nsubfolders: #{subfolders}"
+        else
+            UI.message "Checking #{folder_name}..."
+            ensure_template_folder_exist(current)
+            subfolders.each do |folder|
+                recursively_ensure_snippet_folder_integrity(folder)
+            end
+        end
+    end
+
+    def ensure_template_exist(code_snippet_path)
+        path = template_folder_path(code_snippet_path)
+        template_path = "#{path}.xctemplate"
+        if (!File.exist?(template_path))
+            UI.message "Missing template for snippet #{code_snippet_path}"
+        end
+    end
+
+    def ensure_snippet_exist(template_path)
+        path = snippet_folder_path(template_path).sub(".xctemplate", "")
+        if (!Dir.exist?(path))
+            UI.crash! "Missing snippet at #{path} for template #{template_path}"
+        end
+    end
+
+    def ensure_snippet_folder_exist(template_path)
+        path = snippet_folder_path(template_path)
+        if (!Dir.exist?(path))
+            UI.crash! "Missing snippet folder at #{path} for template folder #{template_path}"
+        end
+    end
+
+    def ensure_template_folder_exist(code_snippet_path)
+        path = template_folder_path(code_snippet_path)
+        if (!Dir.exist?(path))
+            UI.crash! "Missing template folder at #{path} for snippet folder #{code_snippet_path}"
+        end
+    end
+
+    def is_template?(path)
+        File.extname(path) == ".xctemplate"
+    end
+
+    def template_folder_path(code_snippet_path)
+        code_snippet_path.sub(snippet_root(), template_root())
+    end
+
+    def snippet_folder_path(template_path)
+        template_path.sub(template_root(), snippet_root())
+    end
+
+    def template_root
+        ENV["XCTEMPLATE_ROOT"]
+    end
+
+    def snippet_root
+        ENV["SNIPPET_ROOT"]
+    end
+
+    def write_folder_hierarchy(current, file_handle, indentation_level)
+        folder_name = File.basename(current)
+        readme_path = readme_path(current)
+        if (File.exist?(readme_path))
+            base_url = "https://github.com/fabernovel/CodeSnippet_iOS/tree/master"
+            readme_link = "[#{folder_name}](#{base_url}/#{readme_path})"
+            indented_puts(file_handle, readme_link, indentation_level)
+        else
+            indented_puts(file_handle, folder_name, indentation_level)
+            subfolders = Dir["#{current}/*"]
+            subfolders.each do |directory|
+                write_folder_hierarchy(directory, file_handle, indentation_level + 1)
+            end
+        end
+    end
+
+    def readme_path(dir)
+        "#{dir}/README.md"
+    end
+
+    def indented_puts(file_handle, data, level)
+        if (level > 0)
+            indentation = "    " * (level - 1)
+            file_handle.puts(indentation + "* " + data)
+        else
+            file_handle.puts("# #{data}")
+            file_handle.puts("\n")
+        end
+    end
+
+    def in_folder(folder)
+        current = Dir.pwd
+        Dir.chdir(folder)
+        yield
+        Dir.chdir(current)
     end
 end

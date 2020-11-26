@@ -8,22 +8,22 @@
 
 import Foundation
 
-struct MyEntity {
+struct Person {
     let id: String
     let name: String
     let age: Int
 }
 
-struct PerNameMyEntitySortDescription: SortDescription {
+struct PerNamePersonSortDescription: SortDescription {
 
-    func areInIncreasingOrder(_ lhs: MyEntity, _ rhs: MyEntity) -> Bool {
+    func areInIncreasingOrder(_ lhs: Person, _ rhs: Person) -> Bool {
         [lhs.name, lhs.id].isInLocalizedIncreasingOrder(comparedTo: [rhs.name, rhs.id])
     }
 }
 
-struct PerAgeMyEntitySortDescription: SortDescription {
+struct PerAgePersonSortDescription: SortDescription {
 
-    func areInIncreasingOrder(_ lhs: MyEntity, _ rhs: MyEntity) -> Bool {
+    func areInIncreasingOrder(_ lhs: Person, _ rhs: Person) -> Bool {
         if lhs.age == rhs.age {
             return [lhs.id].isInLocalizedIncreasingOrder(comparedTo: [rhs.id])
         }

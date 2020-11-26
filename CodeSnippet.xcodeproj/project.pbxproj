@@ -23,6 +23,12 @@
 /* Begin PBXFileReference section */
 		6D26136EB0C0F49E3ED5C3F3 /* Pods-CodeSnippet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippet.debug.xcconfig"; path = "Target Support Files/Pods-CodeSnippet/Pods-CodeSnippet.debug.xcconfig"; sourceTree = "<group>"; };
 		B8DDD536BF16438C1612C2AB /* Pods_CodeSnippet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnippet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72BDF99256FA70000C03F09 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E72BDF9C256FA70000C03F09 /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
+		E72BDF9E256FA70000C03F09 /* SortDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
+		E72BDFA0256FA70000C03F09 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		E72BDFA2256FA70000C03F09 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E72BDFAF256FA8A700C03F09 /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -76,6 +82,19 @@
 				B8DDD536BF16438C1612C2AB /* Pods_CodeSnippet.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E72BDF98256FA70000C03F09 /* SortDescription.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E72BDF9E256FA70000C03F09 /* SortDescription.swift */,
+				E72BDF9C256FA70000C03F09 /* Sequence+SortDescription.swift */,
+				E72BDFAF256FA8A700C03F09 /* Sequence+LocalizedOrder.swift */,
+				E72BDFA0256FA70000C03F09 /* TemplateIcon.png */,
+				E72BDF99256FA70000C03F09 /* TemplateIcon@2x.png */,
+				E72BDFA2256FA70000C03F09 /* TemplateInfo.plist */,
+			);
+			path = SortDescription.xctemplate;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {
@@ -147,6 +166,7 @@
 		E7DEB5C02488E64400109C0F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				E72BDF98256FA70000C03F09 /* SortDescription.xctemplate */,
 				E7DEB5C12488E64400109C0F /* ADCognitoStack.xctemplate */,
 			);
 			path = Module;

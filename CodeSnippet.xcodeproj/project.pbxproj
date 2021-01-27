@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8F1EAD4303F2EDC55C05C1A5 /* Pods_CodeSnippet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DDD536BF16438C1612C2AB /* Pods_CodeSnippet.framework */; };
-		E72BDFB8256FAA5D00C03F09 /* SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BDFB5256FAA5D00C03F09 /* SortDescription.swift */; };
-		E72BDFB9256FAA5D00C03F09 /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BDFB6256FAA5D00C03F09 /* Sequence+LocalizedOrder.swift */; };
-		E72BDFBA256FAA5D00C03F09 /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BDFB7256FAA5D00C03F09 /* Sequence+SortDescription.swift */; };
 		E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BDFC2256FAA9800C03F09 /* SortDescription+App.swift */; };
+		E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89325C1B3F500C0310C /* SortDescription.swift */; };
+		E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */; };
+		E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -33,11 +33,11 @@
 		E72BDFA0256FA70000C03F09 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E72BDFA2256FA70000C03F09 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E72BDFAF256FA8A700C03F09 /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
-		E72BDFB5256FAA5D00C03F09 /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
-		E72BDFB6256FAA5D00C03F09 /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
-		E72BDFB7256FAA5D00C03F09 /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E72BDFC2256FAA9800C03F09 /* SortDescription+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SortDescription+App.swift"; sourceTree = "<group>"; };
 		E72BDFC6256FAE4900C03F09 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
+		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
+		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -106,14 +106,14 @@
 			path = ADSortDescription.xctemplate;
 			sourceTree = "<group>";
 		};
-		E72BDFB4256FAA4D00C03F09 /* ADSortDescription */ = {
+		E7CFF88925C1B0CE00C0310C /* ADSortDescription */ = {
 			isa = PBXGroup;
 			children = (
 				E72BDFC6256FAE4900C03F09 /* README.md */,
 				E72BDFC2256FAA9800C03F09 /* SortDescription+App.swift */,
-				E72BDFB5256FAA5D00C03F09 /* SortDescription.swift */,
-				E72BDFB6256FAA5D00C03F09 /* Sequence+LocalizedOrder.swift */,
-				E72BDFB7256FAA5D00C03F09 /* Sequence+SortDescription.swift */,
+				E7CFF89325C1B3F500C0310C /* SortDescription.swift */,
+				E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */,
+				E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */,
 			);
 			path = ADSortDescription;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 		E7DEB5A92488E20400109C0F /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				E72BDFB4256FAA4D00C03F09 /* ADSortDescription */,
+				E7CFF88925C1B0CE00C0310C /* ADSortDescription */,
 				E7DEB5D52488E68B00109C0F /* ADCognitoStack */,
 			);
 			path = Module;
@@ -406,15 +406,15 @@
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
 				E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */,
-				E72BDFB9256FAA5D00C03F09 /* Sequence+LocalizedOrder.swift in Sources */,
-				E72BDFB8256FAA5D00C03F09 /* SortDescription.swift in Sources */,
-				E72BDFBA256FAA5D00C03F09 /* Sequence+SortDescription.swift in Sources */,
+				E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */,
 				E7DEB5B82488E20400109C0F /* CoreDataObject.swift in Sources */,
 				E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */,
+				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
 				E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */,
 				E7DEB5B92488E20400109C0F /* CoreDataContainer.swift in Sources */,
 				E7DEB5B62488E20400109C0F /* UnauthorizedRequestRetrier.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
+				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

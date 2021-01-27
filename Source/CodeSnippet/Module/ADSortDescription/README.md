@@ -12,20 +12,21 @@ struct Person {
     let age: Int
 }
 
-struct PerNamePersonSortDescription: SortDescription {
+extension SortDescription where T == Person {
 
-    func areInIncreasingOrder(_ lhs: Person, _ rhs: Person) -> Bool {
-        [lhs.name, lhs.id].isInLocalizedIncreasingOrder(comparedTo: [rhs.name, rhs.id])
-    }
-}
-
-struct PerAgePersonSortDescription: SortDescription {
-
-    func areInIncreasingOrder(_ lhs: Person, _ rhs: Person) -> Bool {
-        if lhs.age == rhs.age {
-            return [lhs.id].isInLocalizedIncreasingOrder(comparedTo: [rhs.id])
+    static func perName() -> SortDescription {
+        SortDescription { lhs, rhs in
+            [lhs.name, lhs.id].isInLocalizedIncreasingOrder(comparedTo: [rhs.name, rhs.id])
         }
-        return lhs.age < rhs.age
+    }
+
+    static func perAge() -> SortDescription {
+        SortDescription { lhs, rhs in
+            if lhs.age == rhs.age {
+                return [lhs.id].isInLocalizedIncreasingOrder(comparedTo: [rhs.id])
+            }
+            return lhs.age < rhs.age
+        }
     }
 }
 

@@ -1,9 +1,9 @@
 //
-//  Sequence+LocallyPrecedes.swift
+//  Sequence+LocalizedOrder.swift
 //  CodeSnippet
 //
-//  Created by Gaétan Zanella on 26/11/2020.
-//  Copyright © 2020 Zanella. All rights reserved.
+//  Created by Gaétan Zanella on 27/01/2021.
+//  Copyright © 2021 Zanella. All rights reserved.
 //
 
 import Foundation

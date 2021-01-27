@@ -13,6 +13,12 @@
 		E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */; };
 		E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */; };
 		E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8AD25C1B73200C0310C /* SeparatorView.swift */; };
+		E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8CC25C1BAD500C0310C /* ViewID.swift */; };
+		E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8CD25C1BAD500C0310C /* VoidHeaderViewModel.swift */; };
+		E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8CE25C1BAD500C0310C /* ListViewModel.swift */; };
+		E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8CF25C1BAD500C0310C /* SectionViewModel.swift */; };
+		E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8D025C1BAD500C0310C /* DiffableDataSource.swift */; };
+		E7CFF8E025C1BB7700C0310C /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8DF25C1BB7700C0310C /* PersonListViewModel.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -53,6 +59,13 @@
 		E7CFF8C025C1B95D00C0310C /* VoidHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidHeaderViewModel.swift; sourceTree = "<group>"; };
 		E7CFF8C425C1B9B400C0310C /* ViewID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewID.swift; sourceTree = "<group>"; };
 		E7CFF8C925C1BA3800C0310C /* DiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSource.swift; sourceTree = "<group>"; };
+		E7CFF8CC25C1BAD500C0310C /* ViewID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewID.swift; sourceTree = "<group>"; };
+		E7CFF8CD25C1BAD500C0310C /* VoidHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidHeaderViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8CE25C1BAD500C0310C /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8CF25C1BAD500C0310C /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8D025C1BAD500C0310C /* DiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSource.swift; sourceTree = "<group>"; };
+		E7CFF8DE25C1BB5C00C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7CFF8DF25C1BB7700C0310C /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -164,6 +177,7 @@
 		E7CFF8AA25C1B70700C0310C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF8CA25C1BAB400C0310C /* ViewModel */,
 				E7CFF8AB25C1B70C00C0310C /* View */,
 			);
 			path = UI;
@@ -207,6 +221,28 @@
 				E7CFF8B725C1B88800C0310C /* TemplateInfo.plist */,
 			);
 			path = ADListViewModel.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7CFF8CA25C1BAB400C0310C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8CB25C1BABD00C0310C /* ADListViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E7CFF8CB25C1BABD00C0310C /* ADListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8DE25C1BB5C00C0310C /* README.md */,
+				E7CFF8DF25C1BB7700C0310C /* PersonListViewModel.swift */,
+				E7CFF8CC25C1BAD500C0310C /* ViewID.swift */,
+				E7CFF8CD25C1BAD500C0310C /* VoidHeaderViewModel.swift */,
+				E7CFF8CE25C1BAD500C0310C /* ListViewModel.swift */,
+				E7CFF8CF25C1BAD500C0310C /* SectionViewModel.swift */,
+				E7CFF8D025C1BAD500C0310C /* DiffableDataSource.swift */,
+			);
+			path = ADListViewModel;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {
@@ -496,17 +532,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CFF8E025C1BB7700C0310C /* PersonListViewModel.swift in Sources */,
 				E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */,
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
 				E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */,
 				E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */,
+				E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */,
 				E7DEB5B82488E20400109C0F /* CoreDataObject.swift in Sources */,
+				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
 				E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */,
+				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
 				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
 				E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */,
 				E7DEB5B92488E20400109C0F /* CoreDataContainer.swift in Sources */,
 				E7DEB5B62488E20400109C0F /* UnauthorizedRequestRetrier.swift in Sources */,
+				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
+				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
 				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
 			);

@@ -3,22 +3,31 @@ PODS:
   - AWSCognitoAuth (2.13.4):
     - AWSCognitoIdentityProviderASF (= 1.0.1)
   - AWSCognitoIdentityProviderASF (1.0.1)
+  - DifferenceKit (1.1.5):
+    - DifferenceKit/Core (= 1.1.5)
+    - DifferenceKit/UIKitExtension (= 1.1.5)
+  - DifferenceKit/Core (1.1.5)
+  - DifferenceKit/UIKitExtension (1.1.5):
+    - DifferenceKit/Core
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - AWSCognitoAuth (~> 2.0)
+  - DifferenceKit (~> 1.1)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AWSCognitoAuth
     - AWSCognitoIdentityProviderASF
+    - DifferenceKit
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   AWSCognitoAuth: 9533cc4f1fe2762b3b328ff417c969d6cc8bb08f
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  DifferenceKit: 516f12e336ed65a3a0665847b5c3cb5cad4bd4ea
 
-PODFILE CHECKSUM: dc27f217517f7ae72301eb6a4c1be6d7342d70f4
+PODFILE CHECKSUM: ac98213d67d4588c8011742d3b0f6c6fe345a98e
 
 COCOAPODS: 1.9.3

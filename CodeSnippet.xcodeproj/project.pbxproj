@@ -66,6 +66,13 @@
 		E7CFF8D025C1BAD500C0310C /* DiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSource.swift; sourceTree = "<group>"; };
 		E7CFF8DE25C1BB5C00C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF8DF25C1BB7700C0310C /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8E525C1BC3800C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7CFF8E625C1BC3800C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		E7CFF8E725C1BC3800C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7CFF8E825C1BC5900C0310C /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8EE25C1BC6700C0310C /* AlertActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8F225C1BC7900C0310C /* AlertPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenting.swift; sourceTree = "<group>"; };
+		E7CFF8F825C1BD5800C0310C /* UIAlertControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerFactory.swift; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -203,6 +210,7 @@
 		E7CFF8B425C1B88200C0310C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF8E425C1BC2B00C0310C /* ADAlertViewModel.xctemplate */,
 				E7CFF8B525C1B88800C0310C /* ADListViewModel.xctemplate */,
 			);
 			path = ViewModel;
@@ -243,6 +251,20 @@
 				E7CFF8D025C1BAD500C0310C /* DiffableDataSource.swift */,
 			);
 			path = ADListViewModel;
+			sourceTree = "<group>";
+		};
+		E7CFF8E425C1BC2B00C0310C /* ADAlertViewModel.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8E825C1BC5900C0310C /* AlertViewModel.swift */,
+				E7CFF8EE25C1BC6700C0310C /* AlertActionViewModel.swift */,
+				E7CFF8F225C1BC7900C0310C /* AlertPresenting.swift */,
+				E7CFF8F825C1BD5800C0310C /* UIAlertControllerFactory.swift */,
+				E7CFF8E625C1BC3800C0310C /* TemplateIcon.png */,
+				E7CFF8E525C1BC3800C0310C /* TemplateIcon@2x.png */,
+				E7CFF8E725C1BC3800C0310C /* TemplateInfo.plist */,
+			);
+			path = ADAlertViewModel.xctemplate;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {

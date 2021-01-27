@@ -38,6 +38,10 @@
 		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
 		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
+		E7CFF8A325C1B69000C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		E7CFF8A425C1B69000C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7CFF8A825C1B69000C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7CFF8A925C1B6C000C0310C /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -118,6 +122,33 @@
 			path = ADSortDescription;
 			sourceTree = "<group>";
 		};
+		E7CFF8A025C1B67F00C0310C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8A125C1B68300C0310C /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E7CFF8A125C1B68300C0310C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8A225C1B69000C0310C /* ADSeparatorView.xctemplate */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7CFF8A225C1B69000C0310C /* ADSeparatorView.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8A325C1B69000C0310C /* TemplateIcon.png */,
+				E7CFF8A425C1B69000C0310C /* TemplateIcon@2x.png */,
+				E7CFF8A825C1B69000C0310C /* TemplateInfo.plist */,
+				E7CFF8A925C1B6C000C0310C /* SeparatorView.swift */,
+			);
+			path = ADSeparatorView.xctemplate;
+			sourceTree = "<group>";
+		};
 		E7DEB5872488E0EB00109C0F = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +210,7 @@
 		E7DEB5BF2488E64400109C0F /* XCTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF8A025C1B67F00C0310C /* UI */,
 				E7DEB5C02488E64400109C0F /* Module */,
 				E7DEB5C92488E64400109C0F /* Data */,
 			);

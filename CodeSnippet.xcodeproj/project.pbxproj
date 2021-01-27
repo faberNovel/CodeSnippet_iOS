@@ -12,6 +12,7 @@
 		E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89325C1B3F500C0310C /* SortDescription.swift */; };
 		E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */; };
 		E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */; };
+		E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8AD25C1B73200C0310C /* SeparatorView.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -42,6 +43,8 @@
 		E7CFF8A425C1B69000C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7CFF8A825C1B69000C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7CFF8A925C1B6C000C0310C /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		E7CFF8AD25C1B73200C0310C /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		E7CFF8B325C1B75200C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -147,6 +150,31 @@
 				E7CFF8A925C1B6C000C0310C /* SeparatorView.swift */,
 			);
 			path = ADSeparatorView.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7CFF8AA25C1B70700C0310C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8AB25C1B70C00C0310C /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E7CFF8AB25C1B70C00C0310C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8AC25C1B71400C0310C /* ADSepatorView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7CFF8AC25C1B71400C0310C /* ADSepatorView */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF8B325C1B75200C0310C /* README.md */,
+				E7CFF8AD25C1B73200C0310C /* SeparatorView.swift */,
+			);
+			path = ADSepatorView;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {
@@ -306,6 +334,7 @@
 		E7DEB5DC248A331600109C0F /* CodeSnippet */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF8AA25C1B70700C0310C /* UI */,
 				E7DEB5A92488E20400109C0F /* Module */,
 				E7DEB5AE2488E20400109C0F /* Data */,
 			);
@@ -435,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */,
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
 				E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */,

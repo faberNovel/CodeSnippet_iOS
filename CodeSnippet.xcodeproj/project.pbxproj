@@ -24,6 +24,10 @@
 		E7CFF90025C1BDDA00C0310C /* AlertActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8FC25C1BDDA00C0310C /* AlertActionViewModel.swift */; };
 		E7CFF90125C1BDDA00C0310C /* AlertPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8FD25C1BDDA00C0310C /* AlertPresenting.swift */; };
 		E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF91125C1BE6000C0310C /* AlertPresenter.swift */; };
+		E7CFF94125C1C73200C0310C /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92725C1C6EB00C0310C /* ImageName.swift */; };
+		E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92825C1C6EB00C0310C /* ImageViewModel.swift */; };
+		E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92A25C1C6EB00C0310C /* ImageViewModel.ImageName+UIImage.swift */; };
+		E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92925C1C6EB00C0310C /* UIImageView+ImageViewModel.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -91,6 +95,10 @@
 		E7CFF91E25C1C21C00C0310C /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
 		E7CFF92425C1C27000C0310C /* ImageViewModel.ImageName+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageViewModel.ImageName+UIImage.swift"; sourceTree = "<group>"; };
 		E7CFF92525C1C27000C0310C /* UIImageView+ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageViewModel.swift"; sourceTree = "<group>"; };
+		E7CFF92725C1C6EB00C0310C /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
+		E7CFF92825C1C6EB00C0310C /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		E7CFF92925C1C6EB00C0310C /* UIImageView+ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageViewModel.swift"; sourceTree = "<group>"; };
+		E7CFF92A25C1C6EB00C0310C /* ImageViewModel.ImageName+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageViewModel.ImageName+UIImage.swift"; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -253,6 +261,7 @@
 		E7CFF8CA25C1BAB400C0310C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF92625C1C5E700C0310C /* ADImageViewModel */,
 				E7CFF8F925C1BDCD00C0310C /* ADAlertViewModel */,
 				E7CFF8CB25C1BABD00C0310C /* ADListViewModel */,
 			);
@@ -312,6 +321,17 @@
 				E7CFF91825C1BFDD00C0310C /* TemplateInfo.plist */,
 			);
 			path = ADImageViewModel.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7CFF92625C1C5E700C0310C /* ADImageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF92725C1C6EB00C0310C /* ImageName.swift */,
+				E7CFF92825C1C6EB00C0310C /* ImageViewModel.swift */,
+				E7CFF92925C1C6EB00C0310C /* UIImageView+ImageViewModel.swift */,
+				E7CFF92A25C1C6EB00C0310C /* ImageViewModel.ImageName+UIImage.swift */,
+			);
+			path = ADImageViewModel;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {
@@ -607,16 +627,20 @@
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
 				E7CFF90125C1BDDA00C0310C /* AlertPresenting.swift in Sources */,
 				E7CFF8FF25C1BDDA00C0310C /* AlertViewModel.swift in Sources */,
+				E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
 				E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */,
 				E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */,
 				E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */,
 				E7DEB5B82488E20400109C0F /* CoreDataObject.swift in Sources */,
+				E7CFF94125C1C73200C0310C /* ImageName.swift in Sources */,
+				E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */,
 				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
 				E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */,
 				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
 				E7CFF8FE25C1BDDA00C0310C /* UIAlertControllerFactory.swift in Sources */,
 				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
+				E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */,
 				E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */,
 				E7DEB5B92488E20400109C0F /* CoreDataContainer.swift in Sources */,
 				E7DEB5B62488E20400109C0F /* UnauthorizedRequestRetrier.swift in Sources */,

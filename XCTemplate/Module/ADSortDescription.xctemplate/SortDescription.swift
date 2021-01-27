@@ -2,9 +2,7 @@
 
 import Foundation
 
-protocol SortDescription {
+struct SortDescription<T> {
 
-    associatedtype Element
-
-    func areInIncreasingOrder(_ lhs: Element, _ rhs: Element) -> Bool
+    let areInIncreasingOrder: (T, T) -> Bool
 }

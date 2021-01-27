@@ -5,7 +5,7 @@ import Foundation
 extension Sequence where Self.Element: Comparable {
 
     // swiftlint:disable:next line_length
-    func sorted<Description: SortDescription>(by description: Description) -> [Element] where Description.Element == Element {
+    func sorted<T>(by description: SortDescription<T>) -> [Element] where T == Element {
         sorted(by: description.areInIncreasingOrder)
     }
 }

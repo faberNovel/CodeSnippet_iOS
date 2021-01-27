@@ -19,6 +19,11 @@
 		E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8CF25C1BAD500C0310C /* SectionViewModel.swift */; };
 		E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8D025C1BAD500C0310C /* DiffableDataSource.swift */; };
 		E7CFF8E025C1BB7700C0310C /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8DF25C1BB7700C0310C /* PersonListViewModel.swift */; };
+		E7CFF8FE25C1BDDA00C0310C /* UIAlertControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8FA25C1BDDA00C0310C /* UIAlertControllerFactory.swift */; };
+		E7CFF8FF25C1BDDA00C0310C /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8FB25C1BDDA00C0310C /* AlertViewModel.swift */; };
+		E7CFF90025C1BDDA00C0310C /* AlertActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8FC25C1BDDA00C0310C /* AlertActionViewModel.swift */; };
+		E7CFF90125C1BDDA00C0310C /* AlertPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF8FD25C1BDDA00C0310C /* AlertPresenting.swift */; };
+		E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF91125C1BE6000C0310C /* AlertPresenter.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -73,6 +78,12 @@
 		E7CFF8EE25C1BC6700C0310C /* AlertActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionViewModel.swift; sourceTree = "<group>"; };
 		E7CFF8F225C1BC7900C0310C /* AlertPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenting.swift; sourceTree = "<group>"; };
 		E7CFF8F825C1BD5800C0310C /* UIAlertControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerFactory.swift; sourceTree = "<group>"; };
+		E7CFF8FA25C1BDDA00C0310C /* UIAlertControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerFactory.swift; sourceTree = "<group>"; };
+		E7CFF8FB25C1BDDA00C0310C /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8FC25C1BDDA00C0310C /* AlertActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionViewModel.swift; sourceTree = "<group>"; };
+		E7CFF8FD25C1BDDA00C0310C /* AlertPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenting.swift; sourceTree = "<group>"; };
+		E7CFF91125C1BE6000C0310C /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		E7CFF91425C1BF4400C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -234,6 +245,7 @@
 		E7CFF8CA25C1BAB400C0310C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF8F925C1BDCD00C0310C /* ADAlertViewModel */,
 				E7CFF8CB25C1BABD00C0310C /* ADListViewModel */,
 			);
 			path = ViewModel;
@@ -265,6 +277,19 @@
 				E7CFF8E725C1BC3800C0310C /* TemplateInfo.plist */,
 			);
 			path = ADAlertViewModel.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7CFF8F925C1BDCD00C0310C /* ADAlertViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF91425C1BF4400C0310C /* README.md */,
+				E7CFF91125C1BE6000C0310C /* AlertPresenter.swift */,
+				E7CFF8FA25C1BDDA00C0310C /* UIAlertControllerFactory.swift */,
+				E7CFF8FB25C1BDDA00C0310C /* AlertViewModel.swift */,
+				E7CFF8FC25C1BDDA00C0310C /* AlertActionViewModel.swift */,
+				E7CFF8FD25C1BDDA00C0310C /* AlertPresenting.swift */,
+			);
+			path = ADAlertViewModel;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {
@@ -555,8 +580,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CFF8E025C1BB7700C0310C /* PersonListViewModel.swift in Sources */,
+				E7CFF90025C1BDDA00C0310C /* AlertActionViewModel.swift in Sources */,
 				E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */,
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
+				E7CFF90125C1BDDA00C0310C /* AlertPresenting.swift in Sources */,
+				E7CFF8FF25C1BDDA00C0310C /* AlertViewModel.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
 				E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */,
 				E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */,
@@ -565,6 +593,7 @@
 				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
 				E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */,
 				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
+				E7CFF8FE25C1BDDA00C0310C /* UIAlertControllerFactory.swift in Sources */,
 				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
 				E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */,
 				E7DEB5B92488E20400109C0F /* CoreDataContainer.swift in Sources */,
@@ -573,6 +602,7 @@
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
 				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
+				E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,6 +31,7 @@
 		E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF97625C3133F00C0310C /* CSButton.swift */; };
 		E7CFF98225C3163500C0310C /* ADViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF98125C3163500C0310C /* ADViewStyle.swift */; };
 		E7CFF9A025C31B0200C0310C /* AutoSizingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF99F25C31B0200C0310C /* AutoSizingCollectionView.swift */; };
+		E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -120,6 +121,7 @@
 		E7CFF99725C31AA100C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7CFF99F25C31B0200C0310C /* AutoSizingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizingCollectionView.swift; sourceTree = "<group>"; };
 		E7CFF9A225C31B4300C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewStyle+CSButton.swift"; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 			children = (
 				E7CFF97A25C3134200C0310C /* README.md */,
 				E7CFF97625C3133F00C0310C /* CSButton.swift */,
+				E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */,
 			);
 			path = ADButton;
 			sourceTree = "<group>";
@@ -736,6 +739,7 @@
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
 				E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */,
+				E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */,
 				E7CFF98225C3163500C0310C /* ADViewStyle.swift in Sources */,
 				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
 				E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */,

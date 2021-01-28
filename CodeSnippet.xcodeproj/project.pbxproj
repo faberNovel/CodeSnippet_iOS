@@ -106,6 +106,10 @@
 		E7CFF97425C3119C00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7CFF97625C3133F00C0310C /* ADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButton.swift; sourceTree = "<group>"; };
 		E7CFF97A25C3134200C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7CFF97C25C3138A00C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7CFF97D25C3138A00C0310C /* ADViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewStyle.swift; sourceTree = "<group>"; };
+		E7CFF97E25C3138A00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7CFF97F25C3138A00C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 		E7CFF8A125C1B68300C0310C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF97B25C3137900C0310C /* ADViewStyle.xctemplate */,
 				E7CFF97025C3119000C0310C /* ADButton.xctemplate */,
 				E7CFF8A225C1B69000C0310C /* ADSeparatorView.xctemplate */,
 			);
@@ -361,6 +366,17 @@
 				E7CFF97625C3133F00C0310C /* ADButton.swift */,
 			);
 			path = ADButton;
+			sourceTree = "<group>";
+		};
+		E7CFF97B25C3137900C0310C /* ADViewStyle.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF97D25C3138A00C0310C /* ADViewStyle.swift */,
+				E7CFF97F25C3138A00C0310C /* TemplateIcon.png */,
+				E7CFF97E25C3138A00C0310C /* TemplateIcon@2x.png */,
+				E7CFF97C25C3138A00C0310C /* TemplateInfo.plist */,
+			);
+			path = ADViewStyle.xctemplate;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {

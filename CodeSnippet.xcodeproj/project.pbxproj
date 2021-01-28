@@ -28,7 +28,7 @@
 		E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92825C1C6EB00C0310C /* ImageViewModel.swift */; };
 		E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92A25C1C6EB00C0310C /* ImageViewModel.ImageName+UIImage.swift */; };
 		E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92925C1C6EB00C0310C /* UIImageView+ImageViewModel.swift */; };
-		E7CFF97725C3133F00C0310C /* ADButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF97625C3133F00C0310C /* ADButton.swift */; };
+		E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF97625C3133F00C0310C /* CSButton.swift */; };
 		E7CFF98225C3163500C0310C /* ADViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF98125C3163500C0310C /* ADViewStyle.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
@@ -105,7 +105,7 @@
 		E7CFF97225C3119C00C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7CFF97325C3119C00C0310C /* ADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButton.swift; sourceTree = "<group>"; };
 		E7CFF97425C3119C00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
-		E7CFF97625C3133F00C0310C /* ADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButton.swift; sourceTree = "<group>"; };
+		E7CFF97625C3133F00C0310C /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
 		E7CFF97A25C3134200C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF97C25C3138A00C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7CFF97D25C3138A00C0310C /* ADViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewStyle.swift; sourceTree = "<group>"; };
@@ -367,7 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				E7CFF97A25C3134200C0310C /* README.md */,
-				E7CFF97625C3133F00C0310C /* ADButton.swift */,
+				E7CFF97625C3133F00C0310C /* CSButton.swift */,
 			);
 			path = ADButton;
 			sourceTree = "<group>";
@@ -705,7 +705,7 @@
 				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
-				E7CFF97725C3133F00C0310C /* ADButton.swift in Sources */,
+				E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */,
 				E7CFF98225C3163500C0310C /* ADViewStyle.swift in Sources */,
 				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
 				E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */,

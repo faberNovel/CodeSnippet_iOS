@@ -13,7 +13,7 @@ import UIKit
 /// `ViewStyle.style` will be called multiple times, possibly in animation blocks, when the button state changes.
 final class CSButton: UIButton {
 
-    private var style: ViewStyle<HCButton>?
+    private var style: ViewStyle<CSButton>?
 
     private var expectedIntrinsicContentSize: CGSize?
 
@@ -60,7 +60,7 @@ final class CSButton: UIButton {
 
     // MARK: - ViewStylable
 
-    convenience init(style: ViewStyle<HCButton>) {
+    convenience init(style: ViewStyle<CSButton>) {
         self.init(type: .custom)
         applyStyle(style)
         setContentHuggingPriority(.defaultHigh, for: .horizontal)
@@ -69,7 +69,7 @@ final class CSButton: UIButton {
         setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
     }
 
-    func applyStyle(_ style: ViewStyle<HCButton>) {
+    func applyStyle(_ style: ViewStyle<CSButton>) {
         self.style = style
         style.style(self)
         setNeedsLayout()

@@ -28,6 +28,7 @@
 		E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92825C1C6EB00C0310C /* ImageViewModel.swift */; };
 		E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92A25C1C6EB00C0310C /* ImageViewModel.ImageName+UIImage.swift */; };
 		E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92925C1C6EB00C0310C /* UIImageView+ImageViewModel.swift */; };
+		E7CFF97725C3133F00C0310C /* ADButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF97625C3133F00C0310C /* ADButton.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -103,6 +104,8 @@
 		E7CFF97225C3119C00C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7CFF97325C3119C00C0310C /* ADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButton.swift; sourceTree = "<group>"; };
 		E7CFF97425C3119C00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7CFF97625C3133F00C0310C /* ADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButton.swift; sourceTree = "<group>"; };
+		E7CFF97A25C3134200C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -224,6 +227,7 @@
 		E7CFF8AB25C1B70C00C0310C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF97525C3132800C0310C /* ADButton */,
 				E7CFF8AC25C1B71400C0310C /* ADSepatorView */,
 			);
 			path = View;
@@ -348,6 +352,15 @@
 				E7CFF97125C3119C00C0310C /* TemplateInfo.plist */,
 			);
 			path = ADButton.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7CFF97525C3132800C0310C /* ADButton */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF97A25C3134200C0310C /* README.md */,
+				E7CFF97625C3133F00C0310C /* ADButton.swift */,
+			);
+			path = ADButton;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {
@@ -663,6 +676,7 @@
 				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
+				E7CFF97725C3133F00C0310C /* ADButton.swift in Sources */,
 				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
 				E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */,
 			);

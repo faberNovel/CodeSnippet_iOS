@@ -37,6 +37,7 @@
 		E7CFF9D025C443E300C0310C /* View+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9CE25C443E300C0310C /* View+HUD.swift */; };
 		E7CFF9D125C443E300C0310C /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9CF25C443E300C0310C /* Loadable.swift */; };
 		E7CFF9F725C448AD00C0310C /* Hideable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9F625C448AD00C0310C /* Hideable.swift */; };
+		E7CFFA0325C449A900C0310C /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFA0225C449A900C0310C /* StackViewBuilder.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
@@ -146,6 +147,8 @@
 		E7CFF9FE25C4496400C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7CFF9FF25C4496500C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7CFFA0025C4496500C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		E7CFFA0225C449A900C0310C /* StackViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
+		E7CFFA0625C449B000C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -269,6 +272,7 @@
 		E7CFF8AB25C1B70C00C0310C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFFA0125C4499800C0310C /* ADStackViewBuilder */,
 				E7CFF9EE25C4452D00C0310C /* ADHideable */,
 				E7CFF9CD25C443CA00C0310C /* ADLoadable */,
 				E7CFF99E25C31AC800C0310C /* ADAutoSizingCollectionView */,
@@ -501,6 +505,15 @@
 				E7CFF9FF25C4496500C0310C /* TemplateInfo.plist */,
 			);
 			path = ADStackViewBuilder.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7CFFA0125C4499800C0310C /* ADStackViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFA0625C449B000C0310C /* README.md */,
+				E7CFFA0225C449A900C0310C /* StackViewBuilder.swift */,
+			);
+			path = ADStackViewBuilder;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {
@@ -819,6 +832,7 @@
 				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
 				E7CFF9B625C43F9600C0310C /* CoreDataContainer.swift in Sources */,
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
+				E7CFFA0325C449A900C0310C /* StackViewBuilder.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
 				E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */,
 				E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */,

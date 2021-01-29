@@ -24,7 +24,7 @@ final class CoreDataContainer {
         let url = Bundle(for: CoreDataContainer.self)
             .url(forResource: "CodeSnippet", withExtension: "momd")
         guard let managedObjectModel = url.flatMap(NSManagedObjectModel.init(contentsOf:)) else {
-            fatalError("Can't find HermesClienteling.momd in Data.framework")
+            fatalError("Can't find CodeSnippet.momd in Data.framework")
         }
         persistentContainer = NSPersistentContainer(
             name: "CodeSnippet",

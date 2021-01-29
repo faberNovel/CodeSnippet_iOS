@@ -14,12 +14,14 @@ PODS:
   - DifferenceKit/Core (1.1.5)
   - DifferenceKit/UIKitExtension (1.1.5):
     - DifferenceKit/Core
+  - MBProgressHUD (1.2.0)
 
 DEPENDENCIES:
   - ADUtils (~> 11.0)
   - Alamofire (~> 5.2)
   - AWSCognitoAuth (~> 2.0)
   - DifferenceKit (~> 1.1)
+  - MBProgressHUD (~> 1.2)
 
 SPEC REPOS:
   trunk:
@@ -28,6 +30,7 @@ SPEC REPOS:
     - AWSCognitoAuth
     - AWSCognitoIdentityProviderASF
     - DifferenceKit
+    - MBProgressHUD
 
 SPEC CHECKSUMS:
   ADUtils: 5f5f1ad7a097dcf7104f9c160bc23a30d7943eb8
@@ -35,7 +38,8 @@ SPEC CHECKSUMS:
   AWSCognitoAuth: 9533cc4f1fe2762b3b328ff417c969d6cc8bb08f
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
   DifferenceKit: 516f12e336ed65a3a0665847b5c3cb5cad4bd4ea
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
-PODFILE CHECKSUM: 327b5928352643a6345b707cce62da5471c8cb3e
+PODFILE CHECKSUM: 05df34019a2fb99f7fdecfc51475ecf5ef657a17
 
 COCOAPODS: 1.9.3

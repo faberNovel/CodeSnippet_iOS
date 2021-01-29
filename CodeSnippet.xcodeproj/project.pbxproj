@@ -32,14 +32,14 @@
 		E7CFF98225C3163500C0310C /* ADViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF98125C3163500C0310C /* ADViewStyle.swift */; };
 		E7CFF9A025C31B0200C0310C /* AutoSizingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF99F25C31B0200C0310C /* AutoSizingCollectionView.swift */; };
 		E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */; };
+		E7CFF9B425C43F9400C0310C /* NSManagedObjectContext+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9B125C43F8100C0310C /* NSManagedObjectContext+NSManagedObject.swift */; };
+		E7CFF9B625C43F9600C0310C /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9B225C43F8100C0310C /* CoreDataContainer.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
 		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
 		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
 		E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AC2488E20400109C0F /* AuthenticationMetadata.swift */; };
 		E7DEB5B62488E20400109C0F /* UnauthorizedRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AD2488E20400109C0F /* UnauthorizedRequestRetrier.swift */; };
 		E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AF2488E20400109C0F /* UserDefaults+Key.swift */; };
-		E7DEB5B82488E20400109C0F /* CoreDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5B02488E20400109C0F /* CoreDataObject.swift */; };
-		E7DEB5B92488E20400109C0F /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5B12488E20400109C0F /* CoreDataContainer.swift */; };
 		E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5BA2488E21200109C0F /* AppDelegate.swift */; };
 		E7F0BC5B2493B24F00D39411 /* CodeSnippet.md in Resources */ = {isa = PBXBuildFile; fileRef = E7F0BC5A2493B24E00D39411 /* CodeSnippet.md */; };
 /* End PBXBuildFile section */
@@ -123,6 +123,8 @@
 		E7CFF9A225C31B4300C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewStyle+CSButton.swift"; sourceTree = "<group>"; };
 		E7CFF9AD25C43EEB00C0310C /* NSManagedObjectContext+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+NSManagedObject.swift"; sourceTree = "<group>"; };
+		E7CFF9B125C43F8100C0310C /* NSManagedObjectContext+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+NSManagedObject.swift"; sourceTree = "<group>"; };
+		E7CFF9B225C43F8100C0310C /* CoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -130,8 +132,6 @@
 		E7DEB5AC2488E20400109C0F /* AuthenticationMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationMetadata.swift; sourceTree = "<group>"; };
 		E7DEB5AD2488E20400109C0F /* UnauthorizedRequestRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedRequestRetrier.swift; sourceTree = "<group>"; };
 		E7DEB5AF2488E20400109C0F /* UserDefaults+Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
-		E7DEB5B02488E20400109C0F /* CoreDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataObject.swift; sourceTree = "<group>"; };
-		E7DEB5B12488E20400109C0F /* CoreDataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
 		E7DEB5BA2488E21200109C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7DEB5BD2488E3E300109C0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7DEB5C22488E64400109C0F /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
@@ -563,8 +563,8 @@
 			isa = PBXGroup;
 			children = (
 				E7DEB5D92488E7AB00109C0F /* README.md */,
-				E7DEB5B02488E20400109C0F /* CoreDataObject.swift */,
-				E7DEB5B12488E20400109C0F /* CoreDataContainer.swift */,
+				E7CFF9B125C43F8100C0310C /* NSManagedObjectContext+NSManagedObject.swift */,
+				E7CFF9B225C43F8100C0310C /* CoreDataContainer.swift */,
 			);
 			path = ADCoreDataStack;
 			sourceTree = "<group>";
@@ -723,19 +723,19 @@
 				E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */,
 				E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */,
 				E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */,
-				E7DEB5B82488E20400109C0F /* CoreDataObject.swift in Sources */,
 				E7CFF94125C1C73200C0310C /* ImageName.swift in Sources */,
 				E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */,
 				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
 				E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */,
 				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
 				E7CFF8FE25C1BDDA00C0310C /* UIAlertControllerFactory.swift in Sources */,
+				E7CFF9B425C43F9400C0310C /* NSManagedObjectContext+NSManagedObject.swift in Sources */,
 				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
 				E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */,
 				E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */,
-				E7DEB5B92488E20400109C0F /* CoreDataContainer.swift in Sources */,
 				E7DEB5B62488E20400109C0F /* UnauthorizedRequestRetrier.swift in Sources */,
 				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
+				E7CFF9B625C43F9600C0310C /* CoreDataContainer.swift in Sources */,
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
 				E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */,

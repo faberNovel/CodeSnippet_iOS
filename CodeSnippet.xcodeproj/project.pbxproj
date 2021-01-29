@@ -122,6 +122,7 @@
 		E7CFF99F25C31B0200C0310C /* AutoSizingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizingCollectionView.swift; sourceTree = "<group>"; };
 		E7CFF9A225C31B4300C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewStyle+CSButton.swift"; sourceTree = "<group>"; };
+		E7CFF9AD25C43EEB00C0310C /* NSManagedObjectContext+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+NSManagedObject.swift"; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -141,7 +142,6 @@
 		E7DEB5C72488E64400109C0F /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7DEB5C82488E64400109C0F /* UnauthorizedRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthorizedRequestRetrier.swift; sourceTree = "<group>"; };
 		E7DEB5CB2488E64400109C0F /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
-		E7DEB5CC2488E64400109C0F /* CoreDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataObject.swift; sourceTree = "<group>"; };
 		E7DEB5CD2488E64400109C0F /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7DEB5CE2488E64400109C0F /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7DEB5CF2488E64400109C0F /* CoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
@@ -527,11 +527,11 @@
 		E7DEB5CA2488E64400109C0F /* ADCoreDataStack.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF9AD25C43EEB00C0310C /* NSManagedObjectContext+NSManagedObject.swift */,
+				E7DEB5CF2488E64400109C0F /* CoreDataContainer.swift */,
 				E7DEB5CB2488E64400109C0F /* TemplateIcon@2x.png */,
-				E7DEB5CC2488E64400109C0F /* CoreDataObject.swift */,
 				E7DEB5CD2488E64400109C0F /* TemplateIcon.png */,
 				E7DEB5CE2488E64400109C0F /* TemplateInfo.plist */,
-				E7DEB5CF2488E64400109C0F /* CoreDataContainer.swift */,
 			);
 			path = ADCoreDataStack.xctemplate;
 			sourceTree = "<group>";

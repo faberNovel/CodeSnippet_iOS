@@ -142,6 +142,10 @@
 		E7CFF9ED25C444BE00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7CFF9F425C4455800C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF9F625C448AD00C0310C /* Hideable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hideable.swift; sourceTree = "<group>"; };
+		E7CFF9FA25C4493000C0310C /* StackViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
+		E7CFF9FE25C4496400C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7CFF9FF25C4496500C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7CFFA0025C4496500C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 		E7CFF8A125C1B68300C0310C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7CFF9F925C4491900C0310C /* ADStackViewBuilder.xctemplate */,
 				E7CFF9E525C4448300C0310C /* ADHideable.xctemplate */,
 				E7CFF99325C31AA100C0310C /* ADLoadable.xctemplate */,
 				E7CFF9B825C4416D00C0310C /* ADAutoSizingCollectionView.xctemplate */,
@@ -485,6 +490,17 @@
 				E7CFF9F625C448AD00C0310C /* Hideable.swift */,
 			);
 			path = ADHideable;
+			sourceTree = "<group>";
+		};
+		E7CFF9F925C4491900C0310C /* ADStackViewBuilder.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFF9FA25C4493000C0310C /* StackViewBuilder.swift */,
+				E7CFF9FE25C4496400C0310C /* TemplateIcon@2x.png */,
+				E7CFFA0025C4496500C0310C /* TemplateIcon.png */,
+				E7CFF9FF25C4496500C0310C /* TemplateInfo.plist */,
+			);
+			path = ADStackViewBuilder.xctemplate;
 			sourceTree = "<group>";
 		};
 		E7DEB5872488E0EB00109C0F = {

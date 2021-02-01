@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ADUtils
 
 class SeparatorView: UIView {
 
@@ -22,7 +23,7 @@ class SeparatorView: UIView {
         }
     }
 
-    var separatorHeight: CGFloat = 1.0 {
+    var separatorHeight: CGFloat = UIScreen.main.ad_pixelDimension {
         didSet {
             setNeedsDisplay()
         }

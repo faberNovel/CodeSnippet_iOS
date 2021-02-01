@@ -278,18 +278,18 @@
 				E7CFF99E25C31AC800C0310C /* ADAutoSizingCollectionView */,
 				E7CFF98025C3161600C0310C /* ADViewStyle */,
 				E7CFF97525C3132800C0310C /* ADButton */,
-				E7CFF8AC25C1B71400C0310C /* ADSepatorView */,
+				E7CFF8AC25C1B71400C0310C /* ADSeparatorView */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		E7CFF8AC25C1B71400C0310C /* ADSepatorView */ = {
+		E7CFF8AC25C1B71400C0310C /* ADSeparatorView */ = {
 			isa = PBXGroup;
 			children = (
 				E7CFF8B325C1B75200C0310C /* README.md */,
 				E7CFF8AD25C1B73200C0310C /* SeparatorView.swift */,
 			);
-			path = ADSepatorView;
+			path = ADSeparatorView;
 			sourceTree = "<group>";
 		};
 		E7CFF8B425C1B88200C0310C /* ViewModel */ = {

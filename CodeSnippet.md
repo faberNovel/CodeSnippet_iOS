@@ -2,11 +2,7 @@
 
 * UI
     * ViewModel
-        * ADImageViewModel
-            * ImageName.swift
-            * ImageViewModel.swift
-            * UIImageView+ImageViewModel.swift
-            * ImageViewModel.ImageName+UIImage.swift
+        * [ADImageViewModel](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/ViewModel/ADImageViewModel/README.md)
         * [ADAlertViewModel](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/ViewModel/ADAlertViewModel/README.md)
         * [ADListViewModel](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/ViewModel/ADListViewModel/README.md)
     * View

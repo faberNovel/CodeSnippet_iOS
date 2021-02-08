@@ -3,31 +3,51 @@
 import CoreData
 import Foundation
 
-class CoreDataContainer {
+final class CoreDataContainer {
 
-    private let container: NSPersistentContainer
+    private let persistentContainer: NSPersistentContainer
+    private lazy var backgroundContext: NSManagedObjectContext = self.makeBackgroundContext()
+
+    var viewContext: NSManagedObjectContext {
+        persistentContainer.viewContext
+    }
 
     // MARK: - Life Cycle
 
-    init(container: NSPersistentContainer) {
-        self.container = container
-        container.loadPersistentStores { _, error in
+    private init() {
+        let url = Bundle(for: CoreDataContainer.self)
+            .url(forResource: "___PRODUCTNAME___", withExtension: "momd")
+        guard let managedObjectModel = url.flatMap(NSManagedObjectModel.init(contentsOf:)) else {
+            fatalError("Can't find ___PRODUCTNAME___.momd in Data.framework")
+        }
+        persistentContainer = NSPersistentContainer(
+            name: "___PRODUCTNAME___",
+            managedObjectModel: managedObjectModel
+        )
+        persistentContainer.loadPersistentStores { _, error in
             guard let error = error else { return }
             fatalError(error.localizedDescription)
         }
     }
 
-    // MARK: - Public
+    // MARK: - CoreDataContainer
 
-    var viewContext: NSManagedObjectContext {
-        container.viewContext
+    func performBackgroundTask(_ task: @escaping (NSManagedObjectContext) -> Void) {
+        let context = backgroundContext
+        context.perform {
+            task(context)
+        }
     }
 
-    func newBackgroundContext() -> NSManagedObjectContext {
-        container.newBackgroundContext()
+    func childManagedObjectContext() -> NSManagedObjectContext {
+        return backgroundContext
     }
 
-    func performInBackgroundContext(block: @escaping (NSManagedObjectContext) -> Void) {
-        container.performBackgroundTask(block)
+    // MARK: - Private
+
+    private func makeBackgroundContext() -> NSManagedObjectContext {
+        let context = persistentContainer.newBackgroundContext()
+        context.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
+        return context
     }
 }

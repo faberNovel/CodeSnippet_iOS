@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8F1EAD4303F2EDC55C05C1A5 /* Pods_CodeSnippet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DDD536BF16438C1612C2AB /* Pods_CodeSnippet.framework */; };
 		E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BDFC2256FAA9800C03F09 /* SortDescription+App.swift */; };
+		E7784A3F2615B75100C8BF37 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7784A3A2615B75100C8BF37 /* TemplateIcon@2x.png */; };
+		E7784A412615B75100C8BF37 /* TemplateIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7784A3C2615B75100C8BF37 /* TemplateIcon.png */; };
+		E7784A422615B75100C8BF37 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7784A3D2615B75100C8BF37 /* TemplateInfo.plist */; };
+		E7784A482615B75E00C8BF37 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A462615B75E00C8BF37 /* Observable.swift */; };
+		E7784A492615B75E00C8BF37 /* ObserverToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A472615B75E00C8BF37 /* ObserverToken.swift */; };
 		E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89325C1B3F500C0310C /* SortDescription.swift */; };
 		E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */; };
 		E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */; };
@@ -59,6 +64,11 @@
 		E72BDFAF256FA8A700C03F09 /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
 		E72BDFC2256FAA9800C03F09 /* SortDescription+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SortDescription+App.swift"; sourceTree = "<group>"; };
 		E72BDFC6256FAE4900C03F09 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7784A3A2615B75100C8BF37 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7784A3C2615B75100C8BF37 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		E7784A3D2615B75100C8BF37 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7784A462615B75E00C8BF37 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		E7784A472615B75E00C8BF37 /* ObserverToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverToken.swift; sourceTree = "<group>"; };
 		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
 		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
@@ -212,6 +222,18 @@
 				E72BDFA2256FA70000C03F09 /* TemplateInfo.plist */,
 			);
 			path = ADSortDescription.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7784A392615B75100C8BF37 /* ADObservable.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E7784A462615B75E00C8BF37 /* Observable.swift */,
+				E7784A472615B75E00C8BF37 /* ObserverToken.swift */,
+				E7784A3A2615B75100C8BF37 /* TemplateIcon@2x.png */,
+				E7784A3C2615B75100C8BF37 /* TemplateIcon.png */,
+				E7784A3D2615B75100C8BF37 /* TemplateInfo.plist */,
+			);
+			path = ADObservable.xctemplate;
 			sourceTree = "<group>";
 		};
 		E7CFF88925C1B0CE00C0310C /* ADSortDescription */ = {
@@ -587,6 +609,7 @@
 		E7DEB5C02488E64400109C0F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				E7784A392615B75100C8BF37 /* ADObservable.xctemplate */,
 				E72BDF98256FA70000C03F09 /* ADSortDescription.xctemplate */,
 				E7DEB5C12488E64400109C0F /* ADCognitoStack.xctemplate */,
 			);
@@ -749,8 +772,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7784A412615B75100C8BF37 /* TemplateIcon.png in Resources */,
 				E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */,
 				E7F0BC5B2493B24F00D39411 /* CodeSnippet.md in Resources */,
+				E7784A3F2615B75100C8BF37 /* TemplateIcon@2x.png in Resources */,
+				E7784A422615B75100C8BF37 /* TemplateInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +846,7 @@
 				E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */,
 				E7CFF94125C1C73200C0310C /* ImageName.swift in Sources */,
 				E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */,
+				E7784A492615B75E00C8BF37 /* ObserverToken.swift in Sources */,
 				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
 				E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */,
 				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
@@ -833,6 +860,7 @@
 				E7CFF9B625C43F9600C0310C /* CoreDataContainer.swift in Sources */,
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
 				E7CFFA0325C449A900C0310C /* StackViewBuilder.swift in Sources */,
+				E7784A482615B75E00C8BF37 /* Observable.swift in Sources */,
 				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
 				E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */,
 				E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */,

@@ -15,8 +15,8 @@
 		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>Observable</string>
+	<string>WeakReferenceStorage</string>
 	<key>MainTemplateFile</key>
-	<string>Observable.swift</string>
+	<string>WeakReferenceStorage.swift</string>
 </dict>
 </plist>

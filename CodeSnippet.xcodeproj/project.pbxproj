@@ -31,7 +31,6 @@
 		E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92A25C1C6EB00C0310C /* ImageViewModel.ImageName+UIImage.swift */; };
 		E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF92925C1C6EB00C0310C /* UIImageView+ImageViewModel.swift */; };
 		E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF97625C3133F00C0310C /* CSButton.swift */; };
-		E7CFF98225C3163500C0310C /* ADViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF98125C3163500C0310C /* ADViewStyle.swift */; };
 		E7CFF9A025C31B0200C0310C /* AutoSizingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF99F25C31B0200C0310C /* AutoSizingCollectionView.swift */; };
 		E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */; };
 		E7CFF9B425C43F9400C0310C /* NSManagedObjectContext+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9B125C43F8100C0310C /* NSManagedObjectContext+NSManagedObject.swift */; };
@@ -39,13 +38,7 @@
 		E7CFF9D025C443E300C0310C /* View+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9CE25C443E300C0310C /* View+HUD.swift */; };
 		E7CFF9D125C443E300C0310C /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9CF25C443E300C0310C /* Loadable.swift */; };
 		E7CFF9F725C448AD00C0310C /* Hideable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF9F625C448AD00C0310C /* Hideable.swift */; };
-		E7CFFA0325C449A900C0310C /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFA0225C449A900C0310C /* StackViewBuilder.swift */; };
 		E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */; };
-		E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */; };
-		E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */; };
-		E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AC2488E20400109C0F /* AuthenticationMetadata.swift */; };
-		E7DEB5B62488E20400109C0F /* UnauthorizedRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AD2488E20400109C0F /* UnauthorizedRequestRetrier.swift */; };
-		E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5AF2488E20400109C0F /* UserDefaults+Key.swift */; };
 		E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEB5BA2488E21200109C0F /* AppDelegate.swift */; };
 		E7F0BC5B2493B24F00D39411 /* CodeSnippet.md in Resources */ = {isa = PBXBuildFile; fileRef = E7F0BC5A2493B24E00D39411 /* CodeSnippet.md */; };
 /* End PBXBuildFile section */
@@ -134,12 +127,6 @@
 		E7CFF97425C3119C00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7CFF97625C3133F00C0310C /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
 		E7CFF97A25C3134200C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E7CFF97C25C3138A00C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		E7CFF97D25C3138A00C0310C /* ADViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewStyle.swift; sourceTree = "<group>"; };
-		E7CFF97E25C3138A00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
-		E7CFF97F25C3138A00C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
-		E7CFF98125C3163500C0310C /* ADViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewStyle.swift; sourceTree = "<group>"; };
-		E7CFF98525C3163900C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF99425C31AA100C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7CFF99525C31AA100C0310C /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		E7CFF99625C31AA100C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
@@ -164,39 +151,15 @@
 		E7CFF9ED25C444BE00C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7CFF9F425C4455800C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF9F625C448AD00C0310C /* Hideable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hideable.swift; sourceTree = "<group>"; };
-		E7CFF9FA25C4493000C0310C /* StackViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
-		E7CFF9FE25C4496400C0310C /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
-		E7CFF9FF25C4496500C0310C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		E7CFFA0025C4496500C0310C /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
-		E7CFFA0225C449A900C0310C /* StackViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
-		E7CFFA0625C449B000C0310C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5902488E0EB00109C0F /* CodeSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DEB5A82488E20400109C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
-		E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoEnvironment.swift; sourceTree = "<group>"; };
-		E7DEB5AC2488E20400109C0F /* AuthenticationMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationMetadata.swift; sourceTree = "<group>"; };
-		E7DEB5AD2488E20400109C0F /* UnauthorizedRequestRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedRequestRetrier.swift; sourceTree = "<group>"; };
-		E7DEB5AF2488E20400109C0F /* UserDefaults+Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
 		E7DEB5BA2488E21200109C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7DEB5BD2488E3E300109C0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7DEB5C22488E64400109C0F /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
-		E7DEB5C32488E64400109C0F /* CognitoAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoAuthentication.swift; sourceTree = "<group>"; };
-		E7DEB5C42488E64400109C0F /* CognitoEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoEnvironment.swift; sourceTree = "<group>"; };
-		E7DEB5C52488E64400109C0F /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
-		E7DEB5C62488E64400109C0F /* AuthenticationMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationMetadata.swift; sourceTree = "<group>"; };
-		E7DEB5C72488E64400109C0F /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		E7DEB5C82488E64400109C0F /* UnauthorizedRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthorizedRequestRetrier.swift; sourceTree = "<group>"; };
 		E7DEB5CB2488E64400109C0F /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7DEB5CD2488E64400109C0F /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7DEB5CE2488E64400109C0F /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E7DEB5CF2488E64400109C0F /* CoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
-		E7DEB5D12488E64400109C0F /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
-		E7DEB5D22488E64400109C0F /* UserDefaults+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
-		E7DEB5D32488E64400109C0F /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
-		E7DEB5D42488E64400109C0F /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		E7DEB5D82488E7A300109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5D92488E7AB00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E7DEB5DA2488E7AD00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7DEB5DB2488E96B00109C0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7F0BC5A2493B24E00D39411 /* CodeSnippet.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CodeSnippet.md; sourceTree = "<group>"; };
 		EDD6EC3DBD754B25AB8FDC41 /* Pods-CodeSnippet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippet.release.xcconfig"; path = "Target Support Files/Pods-CodeSnippet/Pods-CodeSnippet.release.xcconfig"; sourceTree = "<group>"; };
@@ -295,11 +258,9 @@
 		E7CFF8A125C1B68300C0310C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E7CFF9F925C4491900C0310C /* ADStackViewBuilder.xctemplate */,
 				E7CFF9E525C4448300C0310C /* ADHideable.xctemplate */,
 				E7CFF99325C31AA100C0310C /* ADLoadable.xctemplate */,
 				E7CFF9B825C4416D00C0310C /* ADAutoSizingCollectionView.xctemplate */,
-				E7CFF97B25C3137900C0310C /* ADViewStyle.xctemplate */,
 				E7CFF97025C3119000C0310C /* ADButton.xctemplate */,
 				E7CFF8A225C1B69000C0310C /* ADSeparatorView.xctemplate */,
 			);
@@ -329,11 +290,9 @@
 		E7CFF8AB25C1B70C00C0310C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E7CFFA0125C4499800C0310C /* ADStackViewBuilder */,
 				E7CFF9EE25C4452D00C0310C /* ADHideable */,
 				E7CFF9CD25C443CA00C0310C /* ADLoadable */,
 				E7CFF99E25C31AC800C0310C /* ADAutoSizingCollectionView */,
-				E7CFF98025C3161600C0310C /* ADViewStyle */,
 				E7CFF97525C3132800C0310C /* ADButton */,
 				E7CFF8AC25C1B71400C0310C /* ADSeparatorView */,
 			);
@@ -471,26 +430,6 @@
 			path = ADButton;
 			sourceTree = "<group>";
 		};
-		E7CFF97B25C3137900C0310C /* ADViewStyle.xctemplate */ = {
-			isa = PBXGroup;
-			children = (
-				E7CFF97D25C3138A00C0310C /* ADViewStyle.swift */,
-				E7CFF97F25C3138A00C0310C /* TemplateIcon.png */,
-				E7CFF97E25C3138A00C0310C /* TemplateIcon@2x.png */,
-				E7CFF97C25C3138A00C0310C /* TemplateInfo.plist */,
-			);
-			path = ADViewStyle.xctemplate;
-			sourceTree = "<group>";
-		};
-		E7CFF98025C3161600C0310C /* ADViewStyle */ = {
-			isa = PBXGroup;
-			children = (
-				E7CFF98525C3163900C0310C /* README.md */,
-				E7CFF98125C3163500C0310C /* ADViewStyle.swift */,
-			);
-			path = ADViewStyle;
-			sourceTree = "<group>";
-		};
 		E7CFF99325C31AA100C0310C /* ADLoadable.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,26 +492,6 @@
 			path = ADHideable;
 			sourceTree = "<group>";
 		};
-		E7CFF9F925C4491900C0310C /* ADStackViewBuilder.xctemplate */ = {
-			isa = PBXGroup;
-			children = (
-				E7CFF9FA25C4493000C0310C /* StackViewBuilder.swift */,
-				E7CFF9FE25C4496400C0310C /* TemplateIcon@2x.png */,
-				E7CFFA0025C4496500C0310C /* TemplateIcon.png */,
-				E7CFF9FF25C4496500C0310C /* TemplateInfo.plist */,
-			);
-			path = ADStackViewBuilder.xctemplate;
-			sourceTree = "<group>";
-		};
-		E7CFFA0125C4499800C0310C /* ADStackViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				E7CFFA0625C449B000C0310C /* README.md */,
-				E7CFFA0225C449A900C0310C /* StackViewBuilder.swift */,
-			);
-			path = ADStackViewBuilder;
-			sourceTree = "<group>";
-		};
 		E7DEB5872488E0EB00109C0F = {
 			isa = PBXGroup;
 			children = (
@@ -612,7 +531,6 @@
 			children = (
 				E7784A4B2615B81000C8BF37 /* ADWeakReferenceStorage */,
 				E7CFF88925C1B0CE00C0310C /* ADSortDescription */,
-				E7DEB5D52488E68B00109C0F /* ADCognitoStack */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -621,7 +539,6 @@
 			isa = PBXGroup;
 			children = (
 				E7DEB5D62488E69700109C0F /* ADCoreDataStack */,
-				E7DEB5D72488E6A300109C0F /* ADUserDefaults+Key */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -649,30 +566,14 @@
 			children = (
 				E7784A392615B75100C8BF37 /* ADWeakReferenceStorage.xctemplate */,
 				E72BDF98256FA70000C03F09 /* ADSortDescription.xctemplate */,
-				E7DEB5C12488E64400109C0F /* ADCognitoStack.xctemplate */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		E7DEB5C12488E64400109C0F /* ADCognitoStack.xctemplate */ = {
-			isa = PBXGroup;
-			children = (
-				E7DEB5C22488E64400109C0F /* TemplateIcon@2x.png */,
-				E7DEB5C32488E64400109C0F /* CognitoAuthentication.swift */,
-				E7DEB5C42488E64400109C0F /* CognitoEnvironment.swift */,
-				E7DEB5C52488E64400109C0F /* TemplateIcon.png */,
-				E7DEB5C62488E64400109C0F /* AuthenticationMetadata.swift */,
-				E7DEB5C72488E64400109C0F /* TemplateInfo.plist */,
-				E7DEB5C82488E64400109C0F /* UnauthorizedRequestRetrier.swift */,
-			);
-			path = ADCognitoStack.xctemplate;
 			sourceTree = "<group>";
 		};
 		E7DEB5C92488E64400109C0F /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				E7DEB5CA2488E64400109C0F /* ADCoreDataStack.xctemplate */,
-				E7DEB5D02488E64400109C0F /* ADUserDefaults+Key.xctemplate */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -689,29 +590,6 @@
 			path = ADCoreDataStack.xctemplate;
 			sourceTree = "<group>";
 		};
-		E7DEB5D02488E64400109C0F /* ADUserDefaults+Key.xctemplate */ = {
-			isa = PBXGroup;
-			children = (
-				E7DEB5D12488E64400109C0F /* TemplateIcon@2x.png */,
-				E7DEB5D22488E64400109C0F /* UserDefaults+Key.swift */,
-				E7DEB5D32488E64400109C0F /* TemplateIcon.png */,
-				E7DEB5D42488E64400109C0F /* TemplateInfo.plist */,
-			);
-			path = "ADUserDefaults+Key.xctemplate";
-			sourceTree = "<group>";
-		};
-		E7DEB5D52488E68B00109C0F /* ADCognitoStack */ = {
-			isa = PBXGroup;
-			children = (
-				E7DEB5D82488E7A300109C0F /* README.md */,
-				E7DEB5AA2488E20400109C0F /* CognitoAuthentication.swift */,
-				E7DEB5AB2488E20400109C0F /* CognitoEnvironment.swift */,
-				E7DEB5AC2488E20400109C0F /* AuthenticationMetadata.swift */,
-				E7DEB5AD2488E20400109C0F /* UnauthorizedRequestRetrier.swift */,
-			);
-			path = ADCognitoStack;
-			sourceTree = "<group>";
-		};
 		E7DEB5D62488E69700109C0F /* ADCoreDataStack */ = {
 			isa = PBXGroup;
 			children = (
@@ -720,15 +598,6 @@
 				E7CFF9B225C43F8100C0310C /* CoreDataContainer.swift */,
 			);
 			path = ADCoreDataStack;
-			sourceTree = "<group>";
-		};
-		E7DEB5D72488E6A300109C0F /* ADUserDefaults+Key */ = {
-			isa = PBXGroup;
-			children = (
-				E7DEB5DA2488E7AD00109C0F /* README.md */,
-				E7DEB5AF2488E20400109C0F /* UserDefaults+Key.swift */,
-			);
-			path = "ADUserDefaults+Key";
 			sourceTree = "<group>";
 		};
 		E7DEB5DC248A331600109C0F /* CodeSnippet */ = {
@@ -914,29 +783,22 @@
 				E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */,
 				E7CFF9D125C443E300C0310C /* Loadable.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
-				E7DEB5B32488E20400109C0F /* CognitoAuthentication.swift in Sources */,
 				E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */,
 				E7CFF9F725C448AD00C0310C /* Hideable.swift in Sources */,
 				E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */,
 				E7CFF94125C1C73200C0310C /* ImageName.swift in Sources */,
 				E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */,
 				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
-				E7DEB5B72488E20400109C0F /* UserDefaults+Key.swift in Sources */,
 				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
 				E7CFF8FE25C1BDDA00C0310C /* UIAlertControllerFactory.swift in Sources */,
 				E7CFF9B425C43F9400C0310C /* NSManagedObjectContext+NSManagedObject.swift in Sources */,
 				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
 				E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */,
-				E7DEB5B52488E20400109C0F /* AuthenticationMetadata.swift in Sources */,
-				E7DEB5B62488E20400109C0F /* UnauthorizedRequestRetrier.swift in Sources */,
 				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
 				E7CFF9B625C43F9600C0310C /* CoreDataContainer.swift in Sources */,
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
-				E7CFFA0325C449A900C0310C /* StackViewBuilder.swift in Sources */,
-				E7DEB5B42488E20400109C0F /* CognitoEnvironment.swift in Sources */,
 				E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */,
 				E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */,
-				E7CFF98225C3163500C0310C /* ADViewStyle.swift in Sources */,
 				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
 				E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */,
 			);

@@ -11,6 +11,7 @@
 		E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BDFC2256FAA9800C03F09 /* SortDescription+App.swift */; };
 		E7784A7D2615BB4E00C8BF37 /* WeakReferenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A7A2615BB4E00C8BF37 /* WeakReferenceStorage.swift */; };
 		E7784A882615BF0C00C8BF37 /* ObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A872615BF0C00C8BF37 /* ObservableTests.swift */; };
+		E7B68913261F34D000AEE7DD /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B68912261F34D000AEE7DD /* ViewStyle.swift */; };
 		E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89325C1B3F500C0310C /* SortDescription.swift */; };
 		E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */; };
 		E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */; };
@@ -73,6 +74,7 @@
 		E7784A852615BF0C00C8BF37 /* CodeSnippetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeSnippetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7784A872615BF0C00C8BF37 /* ObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTests.swift; sourceTree = "<group>"; };
 		E7784A892615BF0C00C8BF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B68912261F34D000AEE7DD /* ViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
 		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 				E7CFF97A25C3134200C0310C /* README.md */,
 				E7CFF97625C3133F00C0310C /* CSButton.swift */,
 				E7CFF9A325C31D3A00C0310C /* ViewStyle+CSButton.swift */,
+				E7B68912261F34D000AEE7DD /* ViewStyle.swift */,
 			);
 			path = ADButton;
 			sourceTree = "<group>";
@@ -777,6 +780,7 @@
 				E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */,
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
 				E7CFF90125C1BDDA00C0310C /* AlertPresenting.swift in Sources */,
+				E7B68913261F34D000AEE7DD /* ViewStyle.swift in Sources */,
 				E7784A7D2615BB4E00C8BF37 /* WeakReferenceStorage.swift in Sources */,
 				E7CFF9A025C31B0200C0310C /* AutoSizingCollectionView.swift in Sources */,
 				E7CFF8FF25C1BDDA00C0310C /* AlertViewModel.swift in Sources */,

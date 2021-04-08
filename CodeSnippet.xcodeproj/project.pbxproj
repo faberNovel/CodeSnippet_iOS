@@ -75,6 +75,7 @@
 		E7784A872615BF0C00C8BF37 /* ObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTests.swift; sourceTree = "<group>"; };
 		E7784A892615BF0C00C8BF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B68912261F34D000AEE7DD /* ViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
+		E7B68916261F38CC00AEE7DD /* Contributing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Contributing.md; sourceTree = "<group>"; };
 		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
 		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
@@ -500,6 +501,7 @@
 			children = (
 				E7DEB5DB2488E96B00109C0F /* README.md */,
 				E7F0BC5A2493B24E00D39411 /* CodeSnippet.md */,
+				E7B68916261F38CC00AEE7DD /* Contributing.md */,
 				E7DEB5A72488E20400109C0F /* Source */,
 				E7DEB5BF2488E64400109C0F /* XCTemplate */,
 				E7DEB5BC2488E3E300109C0F /* Configuration */,

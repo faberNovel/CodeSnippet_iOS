@@ -8,14 +8,11 @@
     * View
         * [ADAutoSizingCollectionView](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADAutoSizingCollectionView/README.md)
         * [ADHideable](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADHideable/README.md)
-        * [ADSepatorView](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADSepatorView/README.md)
-        * [ADViewStyle](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADViewStyle/README.md)
+        * [ADSeparatorView](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADSeparatorView/README.md)
         * [ADButton](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADButton/README.md)
-        * [ADStackViewBuilder](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADStackViewBuilder/README.md)
         * [ADLoadable](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/UI/View/ADLoadable/README.md)
 * Module
-    * [ADCognitoStack](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Module/ADCognitoStack/README.md)
+    * [ADWeakReferenceStorage](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Module/ADWeakReferenceStorage/README.md)
     * [ADSortDescription](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Module/ADSortDescription/README.md)
 * Data
-    * [ADUserDefaults+Key](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Data/ADUserDefaults+Key/README.md)
     * [ADCoreDataStack](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Data/ADCoreDataStack/README.md)

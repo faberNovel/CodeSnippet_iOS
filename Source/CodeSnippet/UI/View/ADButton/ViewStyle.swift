@@ -1,8 +1,8 @@
 //
-//  ADViewStyle.swift
+//  ViewStyle.swift
 //  CodeSnippet
 //
-//  Created by Gaétan Zanella on 28/01/2021.
+//  Created by Gaétan Zanella on 08/04/2021.
 //  Copyright © 2021 Zanella. All rights reserved.
 //
 
@@ -28,8 +28,7 @@ extension ViewStyle {
     }
 }
 
-protocol ViewStylable {
-}
+protocol ViewStylable {}
 
 extension UIView: ViewStylable {}
 extension UINavigationBarAppearance: ViewStylable {}

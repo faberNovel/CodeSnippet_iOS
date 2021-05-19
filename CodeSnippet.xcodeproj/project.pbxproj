@@ -98,6 +98,7 @@
 		E7C9B8642655107900C9C3F3 /* SysctlInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysctlInspector.m; sourceTree = "<group>"; };
 		E7C9B86E2655191E00C9C3F3 /* RuntimeCharacteristicInspecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeCharacteristicInspecting.swift; sourceTree = "<group>"; };
 		E7C9B8762655194000C9C3F3 /* NotDebuggedInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotDebuggedInspector.swift; sourceTree = "<group>"; };
+		E7C9B88826552F6700C9C3F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
 		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
@@ -282,6 +283,7 @@
 		E7C9B84D2653E1D700C9C3F3 /* Security */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9B88826552F6700C9C3F3 /* README.md */,
 				E7C9B8502653FAB600C9C3F3 /* RuntimeContext.swift */,
 				E7C9B86E2655191E00C9C3F3 /* RuntimeCharacteristicInspecting.swift */,
 				E7C9B8762655194000C9C3F3 /* NotDebuggedInspector.swift */,

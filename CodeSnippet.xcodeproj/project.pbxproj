@@ -294,14 +294,7 @@
 		E7C9B84D2653E1D700C9C3F3 /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				E7C9B88826552F6700C9C3F3 /* README.md */,
-				E7C9B85A26550F1500C9C3F3 /* CodeSnippet-Bridging-Header.h */,
-				E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */,
-				E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */,
-				E7C9B89C2655364300C9C3F3 /* SysctlInspector.h */,
-				E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */,
-				E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */,
-				E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */,
+				E7C9B8C82655412E00C9C3F3 /* ADRuntimeContext */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -328,6 +321,21 @@
 				E7C9B8972655348A00C9C3F3 /* TemplateInfo.plist */,
 			);
 			path = ADRuntimeContext.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7C9B8C82655412E00C9C3F3 /* ADRuntimeContext */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9B88826552F6700C9C3F3 /* README.md */,
+				E7C9B85A26550F1500C9C3F3 /* CodeSnippet-Bridging-Header.h */,
+				E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */,
+				E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */,
+				E7C9B89C2655364300C9C3F3 /* SysctlInspector.h */,
+				E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */,
+				E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */,
+				E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */,
+			);
+			path = ADRuntimeContext;
 			sourceTree = "<group>";
 		};
 		E7CFF88925C1B0CE00C0310C /* ADSortDescription */ = {

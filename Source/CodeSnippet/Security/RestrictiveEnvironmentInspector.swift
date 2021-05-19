@@ -83,7 +83,7 @@ struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
                 atomically: true,
                 encoding: .utf8
             )
-            try FileManager.default.removeItem(atPath: pathToFileInRestrictedDirectory)
+            try fileManager.removeItem(atPath: pathToFileInRestrictedDirectory)
             return true
         } catch {
             return false

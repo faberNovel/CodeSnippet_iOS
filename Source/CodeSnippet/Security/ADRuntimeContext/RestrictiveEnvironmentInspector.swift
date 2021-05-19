@@ -24,9 +24,14 @@ struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
     // MARK: - RuntimeCharacteristicInspecting
 
     func isSatisfied() -> Bool {
-        hasUnauthorizedFileAccess()
+        #if targetEnvironment(simulator)
+        return true
+        #else
+        let isUnrestrictive = hasUnauthorizedFileAccess()
             || hasUnauthorizedFilePermissions()
             || canOpenPackageURL()
+        return !isUnrestrictive
+        #endif
     }
 
     // MARK: - Private

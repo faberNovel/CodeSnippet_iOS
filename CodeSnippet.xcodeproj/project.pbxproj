@@ -1113,7 +1113,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.CodeSnippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Source/CodeSnippet/Security/CodeSnippet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/CodeSnippet/Security/ADRuntimeContext/CodeSnippet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1137,7 +1137,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.CodeSnippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Source/CodeSnippet/Security/CodeSnippet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/CodeSnippet/Security/ADRuntimeContext/CodeSnippet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

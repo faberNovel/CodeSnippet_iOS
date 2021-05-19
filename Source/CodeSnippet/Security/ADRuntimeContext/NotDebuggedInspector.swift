@@ -13,7 +13,11 @@ struct NotDebuggedInspector: RuntimeCharacteristicInspecting {
     // MARK: - RunTimeCharacteristicInspecting
 
     func isSatisfied() -> Bool {
-        !(isDebugged() || isLauchedByDebugger())
+        #if targetEnvironment(simulator)
+        return true
+        #else
+        return !(isDebugged() || isLauchedByDebugger())
+        #endif
     }
 
     // MARK: - Private

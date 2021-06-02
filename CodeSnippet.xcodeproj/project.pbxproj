@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		877C0C492667638E00D82C9E /* Alamofire+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877C0C482667638E00D82C9E /* Alamofire+PromiseKit.swift */; };
 		877C0C5C26677CFC00D82C9E /* TemplateIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 877C0C5926677CFC00D82C9E /* TemplateIcon.png */; };
 		877C0C5D26677CFC00D82C9E /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 877C0C5A26677CFC00D82C9E /* TemplateIcon@2x.png */; };
 		877C0C5E26677CFC00D82C9E /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 877C0C5B26677CFC00D82C9E /* TemplateInfo.plist */; };
@@ -834,7 +833,6 @@
 				E7CFF9B425C43F9400C0310C /* NSManagedObjectContext+NSManagedObject.swift in Sources */,
 				877C0C6226677D8200D82C9E /* Alamofire+PromiseKit.swift in Sources */,
 				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
-				877C0C492667638E00D82C9E /* Alamofire+PromiseKit.swift in Sources */,
 				E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */,
 				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
 				E7CFF9B625C43F9600C0310C /* CoreDataContainer.swift in Sources */,

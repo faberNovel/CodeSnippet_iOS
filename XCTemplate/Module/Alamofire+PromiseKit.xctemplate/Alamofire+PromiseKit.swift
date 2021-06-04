@@ -6,16 +6,16 @@ import PromiseKit
 
 extension Alamofire.DataRequest {
 
-    public func response(_: PMKNamespacer,
-                         queue: DispatchQueue = .main) -> Promise<AFDataResponse<Data?>> {
+    public func ad_response(_: PMKNamespacer,
+                            queue: DispatchQueue = .main) -> Promise<AFDataResponse<Data?>> {
         Promise { seal in
             response(queue: queue) { response in
-                makeResolve(seal, with: response)
+                resolve(response, with: seal)
             }
         }
     }
 
-    public func responseData(
+    public func ad_responseData(
         queue: DispatchQueue = .main,
         dataPreprocessor: DataPreprocessor = DataResponseSerializer.defaultDataPreprocessor,
         emptyResponseCodes: Set<Int> = DataResponseSerializer.defaultEmptyResponseCodes,
@@ -28,12 +28,12 @@ extension Alamofire.DataRequest {
                 emptyResponseCodes: emptyResponseCodes,
                 emptyRequestMethods: emptyRequestMethods
             ) {
-                makeResolve(seal, with: $0)
+                resolve($0, with: seal)
             }
         }
     }
 
-    public func responseString(
+    public func ad_responseString(
         queue: DispatchQueue = .main,
         dataPreprocessor: DataPreprocessor = StringResponseSerializer.defaultDataPreprocessor,
         encoding: String.Encoding? = nil,
@@ -48,12 +48,12 @@ extension Alamofire.DataRequest {
                 emptyResponseCodes: emptyResponseCodes,
                 emptyRequestMethods: emptyRequestMethods
             ) {
-                makeResolve(seal, with: $0)
+                resolve($0, with: seal)
             }
         }
     }
 
-    public func responseJSON(
+    public func ad_responseJSON(
         queue: DispatchQueue = .main,
         dataPreprocessor: DataPreprocessor = JSONResponseSerializer.defaultDataPreprocessor,
         emptyResponseCodes: Set<Int> = JSONResponseSerializer.defaultEmptyResponseCodes,
@@ -68,22 +68,21 @@ extension Alamofire.DataRequest {
                 emptyRequestMethods: emptyRequestMethods,
                 options: options
             ) {
-                makeResolve(seal, with: $0)
+                resolve($0, with: seal)
             }
         }
     }
 }
 
 extension Alamofire.DownloadRequest {
-
-    public func response(_: PMKNamespacer,
+    public func ad_response(_: PMKNamespacer,
                          queue: DispatchQueue = .main) -> Promise<AFDownloadResponse<URL?>> {
         return Promise { seal in
-            response(queue: queue) { makeResolve(seal, with: $0) }
+            response(queue: queue) { resolve($0, with: seal) }
         }
     }
 
-    public func responseData(
+    public func ad_responseData(
         queue: DispatchQueue = .main,
         dataPreprocessor: DataPreprocessor = DataResponseSerializer.defaultDataPreprocessor,
         emptyResponseCodes: Set<Int> = DataResponseSerializer.defaultEmptyResponseCodes,
@@ -96,13 +95,13 @@ extension Alamofire.DownloadRequest {
                 emptyResponseCodes: emptyResponseCodes,
                 emptyRequestMethods: emptyRequestMethods
             ) {
-                makeResolve(seal, with: $0)
+                resolve($0, with: seal)
             }
         }
     }
 }
 
-private func makeResolve<U>(_ seal: Resolver<AFDataResponse<U>>, with response: AFDataResponse<U>) {
+private func resolve<U>(_ response: AFDataResponse<U>, with seal: Resolver<AFDataResponse<U>>) {
     switch response.result {
     case .success:
         seal.fulfill(response)
@@ -111,8 +110,8 @@ private func makeResolve<U>(_ seal: Resolver<AFDataResponse<U>>, with response: 
     }
 }
 
-private func makeResolve<U>(_ seal: Resolver<AFDownloadResponse<U>>,
-                            with response: AFDownloadResponse<U>) {
+private func resolve<U>(_ response: AFDownloadResponse<U>,
+                        with seal: Resolver<AFDownloadResponse<U>>) {
     switch response.result {
     case .success:
         seal.fulfill(response)

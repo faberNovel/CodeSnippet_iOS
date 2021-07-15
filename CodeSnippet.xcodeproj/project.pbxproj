@@ -16,6 +16,12 @@
 		E7784A7D2615BB4E00C8BF37 /* WeakReferenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A7A2615BB4E00C8BF37 /* WeakReferenceStorage.swift */; };
 		E7784A882615BF0C00C8BF37 /* ObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A872615BF0C00C8BF37 /* ObservableTests.swift */; };
 		E7B68913261F34D000AEE7DD /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B68912261F34D000AEE7DD /* ViewStyle.swift */; };
+		E7C9B88A2655329A00C9C3F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E7C9B8892655329A00C9C3F3 /* README.md */; };
+		E7C9B8A02655364300C9C3F3 /* NotDebuggedInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */; };
+		E7C9B8A12655364300C9C3F3 /* RuntimeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */; };
+		E7C9B8A22655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */; };
+		E7C9B8A32655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */; };
+		E7C9B8A42655364300C9C3F3 /* SysctlInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */; };
 		E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89325C1B3F500C0310C /* SortDescription.swift */; };
 		E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */; };
 		E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */; };
@@ -86,6 +92,24 @@
 		E7784A892615BF0C00C8BF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B68912261F34D000AEE7DD /* ViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		E7B68916261F38CC00AEE7DD /* Contributing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Contributing.md; sourceTree = "<group>"; };
+		E7C9B85A26550F1500C9C3F3 /* CodeSnippet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeSnippet-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7C9B88826552F6700C9C3F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7C9B8892655329A00C9C3F3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7C9B88F2655347900C9C3F3 /* RuntimeContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeContext.swift; sourceTree = "<group>"; };
+		E7C9B8902655347A00C9C3F3 /* NotDebuggedInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotDebuggedInspector.swift; sourceTree = "<group>"; };
+		E7C9B8912655347A00C9C3F3 /* RuntimeCharacteristicInspecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeCharacteristicInspecting.swift; sourceTree = "<group>"; };
+		E7C9B8922655347A00C9C3F3 /* RestrictiveEnvironmentInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictiveEnvironmentInspector.swift; sourceTree = "<group>"; };
+		E7C9B8932655347A00C9C3F3 /* SysctlInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysctlInspector.m; sourceTree = "<group>"; };
+		E7C9B8942655347A00C9C3F3 /* SysctlInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysctlInspector.h; sourceTree = "<group>"; };
+		E7C9B8952655348900C9C3F3 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		E7C9B8962655348900C9C3F3 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		E7C9B8972655348A00C9C3F3 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotDebuggedInspector.swift; sourceTree = "<group>"; };
+		E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeContext.swift; sourceTree = "<group>"; };
+		E7C9B89C2655364300C9C3F3 /* SysctlInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysctlInspector.h; sourceTree = "<group>"; };
+		E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeCharacteristicInspecting.swift; sourceTree = "<group>"; };
+		E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictiveEnvironmentInspector.swift; sourceTree = "<group>"; };
+		E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysctlInspector.m; sourceTree = "<group>"; };
 		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
 		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
@@ -267,6 +291,53 @@
 			path = CodeSnippetTests;
 			sourceTree = "<group>";
 		};
+		E7C9B84D2653E1D700C9C3F3 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9B8C82655412E00C9C3F3 /* ADRuntimeContext */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		E7C9B88D2655343900C9C3F3 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9B88E2655345200C9C3F3 /* ADRuntimeContext.xctemplate */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		E7C9B88E2655345200C9C3F3 /* ADRuntimeContext.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9B88F2655347900C9C3F3 /* RuntimeContext.swift */,
+				E7C9B8912655347A00C9C3F3 /* RuntimeCharacteristicInspecting.swift */,
+				E7C9B8902655347A00C9C3F3 /* NotDebuggedInspector.swift */,
+				E7C9B8922655347A00C9C3F3 /* RestrictiveEnvironmentInspector.swift */,
+				E7C9B8942655347A00C9C3F3 /* SysctlInspector.h */,
+				E7C9B8932655347A00C9C3F3 /* SysctlInspector.m */,
+				E7C9B8962655348900C9C3F3 /* TemplateIcon.png */,
+				E7C9B8952655348900C9C3F3 /* TemplateIcon@2x.png */,
+				E7C9B8972655348A00C9C3F3 /* TemplateInfo.plist */,
+			);
+			path = ADRuntimeContext.xctemplate;
+			sourceTree = "<group>";
+		};
+		E7C9B8C82655412E00C9C3F3 /* ADRuntimeContext */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9B88826552F6700C9C3F3 /* README.md */,
+				E7C9B85A26550F1500C9C3F3 /* CodeSnippet-Bridging-Header.h */,
+				E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */,
+				E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */,
+				E7C9B89C2655364300C9C3F3 /* SysctlInspector.h */,
+				E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */,
+				E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */,
+				E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */,
+			);
+			path = ADRuntimeContext;
+			sourceTree = "<group>";
+		};
 		E7CFF88925C1B0CE00C0310C /* ADSortDescription */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +505,7 @@
 		E7CFF92625C1C5E700C0310C /* ADImageViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9B8892655329A00C9C3F3 /* README.md */,
 				E7CFF92725C1C6EB00C0310C /* ImageName.swift */,
 				E7CFF92825C1C6EB00C0310C /* ImageViewModel.swift */,
 				E7CFF92925C1C6EB00C0310C /* UIImageView+ImageViewModel.swift */,
@@ -590,6 +662,7 @@
 		E7DEB5BF2488E64400109C0F /* XCTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9B88D2655343900C9C3F3 /* Security */,
 				E7CFF8A025C1B67F00C0310C /* UI */,
 				E7DEB5C02488E64400109C0F /* Module */,
 				E7DEB5C92488E64400109C0F /* Data */,
@@ -640,6 +713,7 @@
 		E7DEB5DC248A331600109C0F /* CodeSnippet */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9B84D2653E1D700C9C3F3 /* Security */,
 				E7CFF8AA25C1B70700C0310C /* UI */,
 				E7DEB5A92488E20400109C0F /* Module */,
 				E7DEB5AE2488E20400109C0F /* Data */,
@@ -712,6 +786,7 @@
 					};
 					E7DEB58F2488E0EB00109C0F = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -748,6 +823,7 @@
 			files = (
 				877C0C5C26677CFC00D82C9E /* TemplateIcon.png in Resources */,
 				877C0C5D26677CFC00D82C9E /* TemplateIcon@2x.png in Resources */,
+				E7C9B88A2655329A00C9C3F3 /* README.md in Resources */,
 				E7DEB5B22488E20400109C0F /* LaunchScreen.storyboard in Resources */,
 				E7F0BC5B2493B24F00D39411 /* CodeSnippet.md in Resources */,
 				877C0C5E26677CFC00D82C9E /* TemplateInfo.plist in Resources */,
@@ -816,11 +892,14 @@
 				E7CFF90025C1BDDA00C0310C /* AlertActionViewModel.swift in Sources */,
 				E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */,
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
+				E7C9B8A42655364300C9C3F3 /* SysctlInspector.m in Sources */,
 				E7CFF90125C1BDDA00C0310C /* AlertPresenting.swift in Sources */,
 				E7B68913261F34D000AEE7DD /* ViewStyle.swift in Sources */,
+				E7C9B8A22655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift in Sources */,
 				E7784A7D2615BB4E00C8BF37 /* WeakReferenceStorage.swift in Sources */,
 				E7CFF9A025C31B0200C0310C /* AutoSizingCollectionView.swift in Sources */,
 				E7CFF8FF25C1BDDA00C0310C /* AlertViewModel.swift in Sources */,
+				E7C9B8A32655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift in Sources */,
 				E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */,
 				E7CFF9D125C443E300C0310C /* Loadable.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
@@ -829,8 +908,10 @@
 				E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */,
 				E7CFF94125C1C73200C0310C /* ImageName.swift in Sources */,
 				E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */,
+				E7C9B8A12655364300C9C3F3 /* RuntimeContext.swift in Sources */,
 				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
 				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
+				E7C9B8A02655364300C9C3F3 /* NotDebuggedInspector.swift in Sources */,
 				E7CFF8FE25C1BDDA00C0310C /* UIAlertControllerFactory.swift in Sources */,
 				E7CFF9B425C43F9400C0310C /* NSManagedObjectContext+NSManagedObject.swift in Sources */,
 				877C0C6226677D8200D82C9E /* Alamofire+PromiseKit.swift in Sources */,
@@ -1020,6 +1101,7 @@
 			baseConfigurationReference = 6D26136EB0C0F49E3ED5C3F3 /* Pods-CodeSnippet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5M7X5V6ZG;
 				ENABLE_PREVIEWS = YES;
@@ -1031,6 +1113,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.CodeSnippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/CodeSnippet/Security/ADRuntimeContext/CodeSnippet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1041,6 +1125,7 @@
 			baseConfigurationReference = EDD6EC3DBD754B25AB8FDC41 /* Pods-CodeSnippet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U5M7X5V6ZG;
 				ENABLE_PREVIEWS = YES;
@@ -1052,6 +1137,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabernovel.CodeSnippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/CodeSnippet/Security/ADRuntimeContext/CodeSnippet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

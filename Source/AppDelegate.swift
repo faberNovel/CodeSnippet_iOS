@@ -9,4 +9,5 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: NSObject, UIApplicationDelegate {}
+class AppDelegate: NSObject, UIApplicationDelegate {
+}

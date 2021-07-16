@@ -2,6 +2,9 @@
 default_platform(:ios)
 
 platform :ios do
+
+    # LANES
+
     desc "Build project"
     lane :build do
         ensure_git_status_clean
@@ -24,6 +27,12 @@ platform :ios do
                 write_folder_hierarchy(snippet_root(), handle, 0)
             end
             UI.important "#{summary_path} generated 🎉"
+            snippet_summary_path = "XcodeSnippet.md"
+            File.open(snippet_summary_path, "w") do |handle|
+                handle.truncate(0)
+                write_snippet_summary(xcode_snippets_folder, handle)
+            end
+            UI.important "#{snippet_summary_path} generated 🎉"
         end
     end
 
@@ -32,9 +41,12 @@ platform :ios do
         in_folder("..") do
             recursively_ensure_snippet_folder_integrity(snippet_root())
             recursively_ensure_template_folder_integrity(template_root())
+            ensure_snippets_integrity(xcode_snippets_folder)
         end
         UI.important "Project is clean 🎉"
     end
+
+    # TEMPLATES
 
     def recursively_ensure_template_folder_integrity(current)
         if (is_template?(current))
@@ -108,6 +120,98 @@ platform :ios do
         end
     end
 
+    def write_folder_hierarchy(current, file_handle, indentation_level)
+        folder_name = File.basename(current)
+        readme_path = readme_path(current)
+        if (File.exist?(readme_path))
+            base_url = "https://github.com/fabernovel/CodeSnippet_iOS/tree/master"
+            readme_link = "[#{folder_name}](#{base_url}/#{readme_path})"
+            indented_puts(file_handle, readme_link, indentation_level)
+        else
+            indented_puts(file_handle, folder_name, indentation_level)
+            subfolders = Dir["#{current}/*"]
+            subfolders.each do |directory|
+                write_folder_hierarchy(directory, file_handle, indentation_level + 1)
+            end
+        end
+    end
+
+    def indented_puts(file_handle, data, level)
+        if (level > 0)
+            indentation = "    " * (level - 1)
+            file_handle.puts(indentation + "* " + data)
+        else
+            file_handle.puts("# #{data}")
+            file_handle.puts("\n")
+        end
+    end
+
+    # SNIPPETS
+
+    def write_snippet_summary(snippets_path, file_handle)
+        file_handle.puts("# Xcode Snippets\n\n")
+        project_snippet_plists.each do |plist|
+            title = plist["IDECodeSnippetTitle"]
+            summary = plist["IDECodeSnippetSummary"]
+            prefix = plist["IDECodeSnippetCompletionPrefix"]
+            file_handle.puts("## #{title}")
+            file_handle.puts("*Keyword: #{prefix}*")
+            file_handle.puts("#{summary}")
+            file_handle.puts("\n")
+        end
+    end
+
+    def ensure_snippets_integrity(snippets_path)
+        UI.message "Checking Xcode snippets…"
+        plists = project_snippet_plists
+        keys_to_check = ["IDECodeSnippetTitle", "IDECodeSnippetIdentifier", "IDECodeSnippetSummary", "IDECodeSnippetCompletionPrefix"]
+        has_failed = false
+        keys_to_check.each do |key|
+            duplicated_values = duplicated_snippet_values_for_key(key, plists)
+            if (!duplicated_values.empty?)
+                duplicated_values.each do |value|
+                    UI.important "DUPLICATE: #{snippets_path} folder contains multiple snippets with the same value (#{value}) for the key #{key}."
+                end
+                has_failed = true
+            end
+        end
+        keys_to_check.each do |key|
+            values = plists.map { |plist| plist[key] }.select { |value| value != nil && value != "" }
+            if (plists.length != values.length)
+                UI.important "EMPTY VALUE: #{snippets_path} folder contains snippets without a value for key #{key}."
+                has_failed = true
+            end
+        end
+        if (has_failed)
+            UI.crash! "Snippets are corrupted!"
+        end
+    end
+
+    def duplicated_snippet_values_for_key(key, plists)
+        values = plists.map { |plist| plist[key]  }
+        values.select{ |e| values.count(e) > 1 }.uniq
+    end
+
+    def project_snippet_plists
+        snippets = Dir.glob("#{xcode_snippets_folder}/*.codesnippet")
+        snippets.map do |snippet|
+            Plist.parse_xml(snippet)
+        end
+    end
+
+    # SHARED
+
+    def readme_path(dir)
+        "#{dir}/README.md"
+    end
+
+    def in_folder(folder)
+        current = Dir.pwd
+        Dir.chdir(folder)
+        yield
+        Dir.chdir(current)
+    end
+
     def is_template?(path)
         File.extname(path) == ".xctemplate"
     end
@@ -128,40 +232,7 @@ platform :ios do
         ENV["SNIPPET_ROOT"]
     end
 
-    def write_folder_hierarchy(current, file_handle, indentation_level)
-        folder_name = File.basename(current)
-        readme_path = readme_path(current)
-        if (File.exist?(readme_path))
-            base_url = "https://github.com/fabernovel/CodeSnippet_iOS/tree/master"
-            readme_link = "[#{folder_name}](#{base_url}/#{readme_path})"
-            indented_puts(file_handle, readme_link, indentation_level)
-        else
-            indented_puts(file_handle, folder_name, indentation_level)
-            subfolders = Dir["#{current}/*"]
-            subfolders.each do |directory|
-                write_folder_hierarchy(directory, file_handle, indentation_level + 1)
-            end
-        end
-    end
-
-    def readme_path(dir)
-        "#{dir}/README.md"
-    end
-
-    def indented_puts(file_handle, data, level)
-        if (level > 0)
-            indentation = "    " * (level - 1)
-            file_handle.puts(indentation + "* " + data)
-        else
-            file_handle.puts("# #{data}")
-            file_handle.puts("\n")
-        end
-    end
-
-    def in_folder(folder)
-        current = Dir.pwd
-        Dir.chdir(folder)
-        yield
-        Dir.chdir(current)
+    def xcode_snippets_folder
+        ENV["XCODE_SNIPPETS_FOLDER"]
     end
 end

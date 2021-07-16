@@ -239,6 +239,7 @@ PLATFORMS
 DEPENDENCIES
   cocoapods (= 1.9.3)
   fastlane (~> 2.1)
+  plist (~> 3.5)
 
 BUNDLED WITH
-   2.1.4
+   2.2.5

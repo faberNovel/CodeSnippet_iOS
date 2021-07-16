@@ -156,8 +156,10 @@ platform :ios do
             summary = plist["IDECodeSnippetSummary"]
             prefix = plist["IDECodeSnippetCompletionPrefix"]
             file_handle.puts("## #{title}")
-            file_handle.puts("**Keyword: #{prefix}**")
+            file_handle.puts("\n")
             file_handle.puts("#{summary}")
+            file_handle.puts("\n")
+            file_handle.puts("**Keyword: #{prefix}**")
             file_handle.puts("\n")
         end
     end

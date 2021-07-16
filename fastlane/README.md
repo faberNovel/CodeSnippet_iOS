@@ -16,6 +16,11 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios build
+```
+fastlane ios build
+```
+Build project
 ### ios generate_summary
 ```
 fastlane ios generate_summary

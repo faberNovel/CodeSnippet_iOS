@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cst</string>
+	<string>mpu</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private enum Constants {
-    static let &lt;#constantName#&gt;: &lt;#constantType#&gt; = &lt;#constantValue#&gt;
-}</string>
+	<string>// MARK: - Public</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>fabernovel-constants</string>
+	<string>fabernovel-mark-public</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#FN - Constants</string>
+	<string>#FN - MARK Public</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>A constants enum snippet following Fabernovel coding style</string>
+	<string>A public indicator comment</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -10,7 +10,7 @@ You can browse code snippets in the [CodeSnippet](https://github.com/faberNovel/
 
 ### As Xcode templates
 
-To facilitate their integration inside Xcode, each [code snippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/CodeSnippet.md) is associated to Xcode templates.
+To facilitate their integration inside Xcode, each [code snippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/CodeSnippet.md) is associated to s Xcode template.
 
 To install the snippet templates in your machine, install [xcresource](https://github.com/faberNovel/xcresource-cli) and run `xcresource template install`. Run the command again to update them.
 
@@ -20,9 +20,9 @@ The snippet templates will be available inside Xcode anytime you create a new fi
 
 ### As Xcode codesnippets
 
-[XCSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/XcodeSnippet.md) contains sample codes that can be added to in the [Xcode code Snippets library](https://sarunw.com/posts/how-to-create-code-snippets-in-xcode/).
+[XCSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/XcodeSnippet.md) contains snippets that can be added to in the [Xcode code Snippets library](https://sarunw.com/posts/how-to-create-code-snippets-in-xcode/).
 
-Run `xcresource snippet install` to add them.
+Run `xcresource snippet install` to install them.
 
 ## Contribute
 

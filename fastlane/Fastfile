@@ -5,6 +5,20 @@ platform :ios do
 
     # LANES
 
+    desc "Build project"
+    lane :build do
+        ensure_git_status_clean
+        cocoapods(
+            podfile: "./"
+        )
+        xcodebuild(
+            scheme: ENV["SCHEME"],
+            xcargs: "CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS= CODE_SIGN_IDENTITY= -quiet",
+            workspace: ENV["WORKSPACE"]
+        )
+    end
+
+
     desc "Generate code snippets summary"
     lane :generate_summary do
         in_folder("..") do

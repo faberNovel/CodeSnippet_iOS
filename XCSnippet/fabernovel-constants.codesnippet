@@ -18,6 +18,8 @@
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Constants</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A constants enum snippet following Fabernovel coding style</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

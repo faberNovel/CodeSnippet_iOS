@@ -2,19 +2,27 @@
 
 Code snippets are a way to share iOS practices and facilitate their integration inside Xcode projects.
 
-## Browse snippets
+## Browsing snippets
 
 You can browse code snippets in the [CodeSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/CodeSnippet.md) folder. Each snippet resides in its dedicated folder and provides a `README` file.
 
-## Use snippets in Xcode
+## Integrating code snippets in Xcode
 
-To facilitate their integration inside Xcode, each snippet is associated to a Xcode template.
+### As Xcode templates
 
-To install the snippet templates in your machine, install [xctemplate](https://github.com/faberNovel/xctemplate-cli) and run `xctemplate install`. Run the command again to update them.
+To facilitate their integration inside Xcode, each [code snippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/CodeSnippet.md) is associated to Xcode templates.
+
+To install the snippet templates in your machine, install [xcresource](https://github.com/faberNovel/xcresource-cli) and run `xcresource template install`. Run the command again to update them.
 
 The snippet templates will be available inside Xcode anytime you create a new file (File > New > File or ⌘ + N).
 
 > Once integrated, a snippet can be modified as much as you want. It should be tested and understood by you.
+
+### As Xcode codesnippets
+
+[XCSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/XcodeSnippet.md) contains sample codes that can be added to in the [Xcode code Snippets library](https://sarunw.com/posts/how-to-create-code-snippets-in-xcode/).
+
+Run `xcresource snippet install` to add them.
 
 ## Contribute
 

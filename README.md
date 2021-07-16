@@ -20,9 +20,9 @@ The snippet templates will be available inside Xcode anytime you create a new fi
 
 ### As Xcode codesnippets
 
-[XCSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/XcodeSnippet.md) contains snippets that can be added to in the [Xcode code Snippets library](https://sarunw.com/posts/how-to-create-code-snippets-in-xcode/).
+The repository contains [snippets](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/XcodeSnippet.md) that can be added to your [Xcode snippets library](https://sarunw.com/posts/how-to-create-code-snippets-in-xcode/#code-snippets-library).
 
-Run `xcresource snippet install` to install them.
+Run `xcresource snippet install` to install them locally on your machine. Restarting Xcode is required.
 
 ## Contribute
 

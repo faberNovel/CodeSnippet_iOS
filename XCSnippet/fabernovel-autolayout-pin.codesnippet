@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#SubView#&gt;.translatesAutoresizingMaskIntoConstraints = false
+&lt;#SubView#&gt;.topAnchor.constraint(equalTo: &lt;#SubViewContainerView#&gt;.topAnchor).isActive = true
+&lt;#SubView#&gt;.bottomAnchor.constraint(equalTo: &lt;#SubViewContainerView#&gt;.bottomAnchor).isActive = true
+&lt;#SubView#&gt;.leadingAnchor.constraint(equalTo: &lt;#SubViewContainerView#&gt;.leadingAnchor).isActive = true
+&lt;#SubView#&gt;.trailingAnchor.constraint(equalTo: &lt;#SubViewContainerView#&gt;.trailingAnchor).isActive = true</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>fabernove-autolayout-pin</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>#FN - Autolayout pin</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>The verbose code to pin a view with autolayout</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

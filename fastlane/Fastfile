@@ -155,6 +155,8 @@ platform :ios do
             title = plist["IDECodeSnippetTitle"]
             summary = plist["IDECodeSnippetSummary"]
             prefix = plist["IDECodeSnippetCompletionPrefix"]
+            snippet_code = plist["IDECodeSnippetContents"]
+            snippet_language = plist["IDECodeSnippetLanguage"]
             file_handle.puts("## #{title}")
             file_handle.puts("\n")
             file_handle.puts("#{summary}")
@@ -163,6 +165,25 @@ platform :ios do
                 file_handle.puts("**Keyword: #{prefix}**")
                 file_handle.puts("\n")
             end
+            file_handle.puts("<details>")
+            file_handle.puts("<summary>Snippet code</summary>")
+            file_handle.puts("\n")
+            file_handle.puts("```" + markdown_language(snippet_language))
+            file_handle.puts(snippet_code)
+            file_handle.puts("```")
+            file_handle.puts("</details>")
+            file_handle.puts("\n")
+        end
+    end
+
+    def markdown_language(snippet_language)
+        return case snippet_language
+        when "Xcode.SourceCodeLanguage.Swift"
+            "swift"
+        when "Xcode.SourceCodeLanguage.Objective-C"
+            "objective-c"
+        else
+            ""
         end
     end
 

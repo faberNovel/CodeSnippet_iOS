@@ -167,7 +167,7 @@ platform :ios do
     def ensure_snippets_integrity(snippets_path)
         UI.message "Checking Xcode snippets…"
         plists = project_snippet_plists
-        keys_to_check = ["IDECodeSnippetTitle", "IDECodeSnippetIdentifier", "IDECodeSnippetSummary", "IDECodeSnippetCompletionPrefix"]
+        keys_to_check = ["IDECodeSnippetTitle", "IDECodeSnippetIdentifier", "IDECodeSnippetSummary"]
         has_failed = false
         keys_to_check.each do |key|
             duplicated_values = duplicated_snippet_values_for_key(key, plists)

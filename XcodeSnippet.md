@@ -28,8 +28,6 @@ A private function
 
 The verbose code to pin a view with autolayout
 
-**Keyword: **
-
 ## #FN - MARK Private
 
 A private indicator comment

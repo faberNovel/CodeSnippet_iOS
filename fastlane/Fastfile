@@ -159,8 +159,10 @@ platform :ios do
             file_handle.puts("\n")
             file_handle.puts("#{summary}")
             file_handle.puts("\n")
-            file_handle.puts("**Keyword: #{prefix}**")
-            file_handle.puts("\n")
+            if (!prefix.nil? && !prefix.empty?)
+                file_handle.puts("**Keyword: #{prefix}**")
+                file_handle.puts("\n")
+            end
         end
     end
 

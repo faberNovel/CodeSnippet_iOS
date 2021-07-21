@@ -16,7 +16,6 @@
 * Module
     * [ADWeakReferenceStorage](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Module/ADWeakReferenceStorage/README.md)
     * [ADSortDescription](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Module/ADSortDescription/README.md)
-    * Alamofire+PromiseKit
-        * Alamofire+PromiseKit.swift
+    * [Alamofire+PromiseKit](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Module/Alamofire+PromiseKit/README.md)
 * Data
     * [ADCoreDataStack](https://github.com/fabernovel/CodeSnippet_iOS/tree/master/Source/CodeSnippet/Data/ADCoreDataStack/README.md)

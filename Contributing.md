@@ -1,9 +1,11 @@
 
-# Contribute
+# Contributing
 
 Clone this repository to get started and create your feature branch.
 
-## Create a Xcode template
+## Adding code snippets
+
+### Creating a Xcode template
 
 Open `CodeSnippet.xcworkspace`.
 
@@ -17,11 +19,11 @@ Do not hesitate to use the Xcode template variables and others Xcode tricks (`__
 
 > Make sure your templates files are not added to one of the Xcode project targets.
 
-## Create your snippet
+### Creating your snippet
 
 To install your snippet template to Xcode, commit your code and install it locally:
 
-`xctemplate install --url path/to/the/repository --branch yourBranch`
+`xcresource template install --url path/to/the/repository --pointer yourBranch`
 
 Your template should now appear in Xcode (File > New > File).
 
@@ -29,13 +31,13 @@ Create the snippet folder and create your code snippet inside it using the snipp
 
 > Your code snippet should compile! Add the snippet dependencies to the project if needed.
 
-## Publish your snippet
+### Publishing your snippet
 
 Run `bundle exec fastlane generate_summary` to update the `CodeSnippet.md` file. Create a PR once you are done. Thanks for contributing! 😊
 
 > You must be in the Fabernovel Github team for contributing.
 
-## Guide
+### Guide
 
 **1. Create agnostic snippets**
 
@@ -59,13 +61,22 @@ Here are some key differences:
 
 If your code is generic and helpful for everyone, add it to [ADUtils](https://github.com/applidium/ADUtils) instead.
 
+## Adding Xcode codesnippets
+
+You can add Xcode codesnippets inside the dedicated [XCSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/XCSnippet) folder.
+
+First, create your snippet in Xcode (cmd + shift + l). Make sure to provide a completion prefix and a summary.
+
+Then, open the Xcode codesnippets folder using `xcresource snippet open`, search your snippet and copy/paste it in the `XCSnippet` folder. Make sure to rename your snippet file with an explicit name like `fabernovel-my-snippet`.
+
+Run `bundle exec faslane generate_summary` to update the [XCSnippet](https://github.com/faberNovel/CodeSnippet_iOS/tree/master/XcodeSnippet.md) file and push it!
 
 ## Under the hood
 
 This tool relies on 3 github projects :
 
 1. [https://github.com/faberNovel/homebrew-formulae](https://github.com/faberNovel/homebrew-formulae) : Fabernovel Homebrew Formulae
-2. [https://github.com/faberNovel/xctemplate-cli](https://github.com/faberNovel/xctemplate-cli) : the snippet installer
+2. [https://github.com/faberNovel/xcresource-cli](https://github.com/faberNovel/xcresource-cli) : the snippet installer
 3. [https://github.com/faberNovel/CodeSnippet_iOS](https://github.com/faberNovel/CodeSnippet_iOS) : the place where your snippets live
 
 We have the following dependencies : (1) depends on (2) which depends on (3)

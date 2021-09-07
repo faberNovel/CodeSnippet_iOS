@@ -13,9 +13,9 @@ struct RuntimeCharacteristics: OptionSet {
     let rawValue: Int
 
     static let isNotDebugged = RuntimeCharacteristics(rawValue: 1 << 0)
-    static let runInRestriveEnvironment = RuntimeCharacteristics(rawValue: 1 << 1)
+    static let runInRestrictiveEnvironment = RuntimeCharacteristics(rawValue: 1 << 1)
 
-    static let isSafe: RuntimeCharacteristics = [.isNotDebugged, .runInRestriveEnvironment]
+    static let isSafe: RuntimeCharacteristics = [.isNotDebugged, .runInRestrictiveEnvironment]
 }
 
 class RuntimeContext {
@@ -37,7 +37,7 @@ class RuntimeContext {
                 NotDebuggedInspector()
             )
         }
-        if characteristics.contains(.runInRestriveEnvironment) {
+        if characteristics.contains(.runInRestrictiveEnvironment) {
             group.add(
                 RestrictiveEnvironmentInspector(
                     fileManager: .default,

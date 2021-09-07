@@ -8,9 +8,11 @@
 
 import Foundation
 
-enum NotDebuggedInspectorError: Error {
-    case isDebugged
-    case isLaunchedByDebugger
+extension NotDebuggedInspector {
+    enum Error: Swift.Error {
+        case isDebugged
+        case isLaunchedByDebugger
+    }
 }
 
 struct NotDebuggedInspector: RuntimeCharacteristicInspecting {
@@ -19,10 +21,10 @@ struct NotDebuggedInspector: RuntimeCharacteristicInspecting {
 
     func satisfy() throws {
         if isDebugged() {
-            throw NotDebuggedInspectorError.isDebugged
+            throw Error.isDebugged
         }
         if isLaunchedByDebugger() {
-            throw NotDebuggedInspectorError.isLaunchedByDebugger
+            throw Error.isLaunchedByDebugger
         }
     }
 

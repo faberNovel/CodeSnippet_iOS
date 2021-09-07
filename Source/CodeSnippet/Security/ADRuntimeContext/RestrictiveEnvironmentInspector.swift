@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 
-enum RuntimeCharacteristicInspectingError: Error {
-    case unauthorizedFileAccess
-    case unauthorizedFilePermissions
-    case canOpenPackageURL
+extension RestrictiveEnvironmentInspector {
+    enum Error: Swift.Error {
+        case unauthorizedFileAccess
+        case unauthorizedFilePermissions
+        case canOpenPackageURL
+    }
 }
 
 struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
@@ -31,13 +33,13 @@ struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
 
     func satisfy() throws {
         if hasUnauthorizedFileAccess() {
-            throw RuntimeCharacteristicInspectingError.unauthorizedFileAccess
+            throw Error.unauthorizedFileAccess
         }
         if hasUnauthorizedFilePermissions() {
-            throw RuntimeCharacteristicInspectingError.unauthorizedFilePermissions
+            throw Error.unauthorizedFilePermissions
         }
         if canOpenPackageURL() {
-            throw RuntimeCharacteristicInspectingError.canOpenPackageURL
+            throw Error.canOpenPackageURL
         }
     }
 

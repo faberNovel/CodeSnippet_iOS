@@ -23,12 +23,14 @@ class RuntimeContext {
     // MARK: - Public
 
     func satisfyOrCrash(_ characteristics: RuntimeCharacteristics) {
-        guard satisfy(characteristics) else {
-            fatalError("Runtime not  corrumption")
+        do {
+            try satisfy(characteristics)
+        } catch {
+            fatalError("Invalid runtime")
         }
     }
 
-    func satisfy(_ characteristics: RuntimeCharacteristics) -> Bool {
+    func satisfy(_ characteristics: RuntimeCharacteristics) throws {
         var group = RunTimeCharacteristicInspectorGroup()
         if characteristics.contains(.isNotDebugged) {
             group.add(
@@ -43,6 +45,6 @@ class RuntimeContext {
                 )
             )
         }
-        return group.isSatisfied()
+        try group.satisfy()
     }
 }

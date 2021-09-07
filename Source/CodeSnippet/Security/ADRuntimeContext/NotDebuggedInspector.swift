@@ -8,16 +8,22 @@
 
 import Foundation
 
+enum NotDebuggedInspectorError: Error {
+    case isDebugged
+    case isLaunchedByDebugger
+}
+
 struct NotDebuggedInspector: RuntimeCharacteristicInspecting {
 
     // MARK: - RunTimeCharacteristicInspecting
 
-    func isSatisfied() -> Bool {
-        #if targetEnvironment(simulator)
-        return true
-        #else
-        return !(isDebugged() || isLauchedByDebugger())
-        #endif
+    func satisfy() throws {
+        if isDebugged() {
+            throw NotDebuggedInspectorError.isDebugged
+        }
+        if isLaunchedByDebugger() {
+            throw NotDebuggedInspectorError.isLaunchedByDebugger
+        }
     }
 
     // MARK: - Private
@@ -28,7 +34,7 @@ struct NotDebuggedInspector: RuntimeCharacteristicInspecting {
     }
 
     // https://github.com/OWASP/owasp-mstg/blob/master/Document/0x06j-Testing-Resiliency-Against-Reverse-Engineering.md#using-getppid
-    private func isLauchedByDebugger() -> Bool {
+    private func isLaunchedByDebugger() -> Bool {
         getppid() != 1
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol RuntimeCharacteristicInspecting {
-    func isSatisfied() -> Bool
+    func satisfy() throws
 }
 
 struct RunTimeCharacteristicInspectorGroup: RuntimeCharacteristicInspecting {
@@ -24,7 +24,9 @@ struct RunTimeCharacteristicInspectorGroup: RuntimeCharacteristicInspecting {
 
     // MARK: - RuntimeCharacteristicInspecting
 
-    func isSatisfied() -> Bool {
-        inspectors.allSatisfy { $0.isSatisfied() }
+    func satisfy() throws {
+        for inspector in inspectors {
+            try inspector.satisfy()
+        }
     }
 }

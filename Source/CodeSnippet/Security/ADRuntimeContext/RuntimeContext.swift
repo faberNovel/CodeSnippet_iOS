@@ -13,9 +13,9 @@ struct RuntimeCharacteristics: OptionSet {
     let rawValue: Int
 
     static let isNotDebugged = RuntimeCharacteristics(rawValue: 1 << 0)
-    static let runInRestriveEnvironment = RuntimeCharacteristics(rawValue: 1 << 1)
+    static let runInRestrictiveEnvironment = RuntimeCharacteristics(rawValue: 1 << 1)
 
-    static let isSafe: RuntimeCharacteristics = [.isNotDebugged, .runInRestriveEnvironment]
+    static let isSafe: RuntimeCharacteristics = [.isNotDebugged, .runInRestrictiveEnvironment]
 }
 
 class RuntimeContext {
@@ -23,19 +23,21 @@ class RuntimeContext {
     // MARK: - Public
 
     func satisfyOrCrash(_ characteristics: RuntimeCharacteristics) {
-        guard satisfy(characteristics) else {
-            fatalError("Runtime not  corrumption")
+        do {
+            try satisfy(characteristics)
+        } catch {
+            fatalError("Invalid runtime")
         }
     }
 
-    func satisfy(_ characteristics: RuntimeCharacteristics) -> Bool {
+    func satisfy(_ characteristics: RuntimeCharacteristics) throws {
         var group = RunTimeCharacteristicInspectorGroup()
         if characteristics.contains(.isNotDebugged) {
             group.add(
                 NotDebuggedInspector()
             )
         }
-        if characteristics.contains(.runInRestriveEnvironment) {
+        if characteristics.contains(.runInRestrictiveEnvironment) {
             group.add(
                 RestrictiveEnvironmentInspector(
                     fileManager: .default,
@@ -43,6 +45,6 @@ class RuntimeContext {
                 )
             )
         }
-        return group.isSatisfied()
+        try group.satisfy()
     }
 }

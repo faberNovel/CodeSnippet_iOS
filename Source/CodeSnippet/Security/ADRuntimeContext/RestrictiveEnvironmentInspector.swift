@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+extension RestrictiveEnvironmentInspector {
+    enum Error: Swift.Error {
+        case unauthorizedFileAccess
+        case unauthorizedFilePermissions
+        case canOpenPackageURL
+    }
+}
+
 struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
 
     private let fileManager: FileManager
@@ -23,20 +31,22 @@ struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
 
     // MARK: - RuntimeCharacteristicInspecting
 
-    func isSatisfied() -> Bool {
-        #if targetEnvironment(simulator)
-        return true
-        #else
-        let isUnrestrictive = hasUnauthorizedFileAccess()
-            || hasUnauthorizedFilePermissions()
-            || canOpenPackageURL()
-        return !isUnrestrictive
-        #endif
+    func satisfy() throws {
+        if hasUnauthorizedFileAccess() {
+            throw Error.unauthorizedFileAccess
+        }
+        if hasUnauthorizedFilePermissions() {
+            throw Error.unauthorizedFilePermissions
+        }
+        if canOpenPackageURL() {
+            throw Error.canOpenPackageURL
+        }
     }
 
     // MARK: - Private
 
     // https://github.com/OWASP/owasp-mstg/blob/master/Document/0x06j-Testing-Resiliency-Against-Reverse-Engineering.md#file-based-checks
+    // swiftlint:disable function_body_length
     private func hasUnauthorizedFileAccess() -> Bool {
         let list = [
             "/Applications/Cydia.app",

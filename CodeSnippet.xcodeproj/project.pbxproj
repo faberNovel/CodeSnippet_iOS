@@ -12,16 +12,16 @@
 		877C0C5E26677CFC00D82C9E /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 877C0C5B26677CFC00D82C9E /* TemplateInfo.plist */; };
 		877C0C6226677D8200D82C9E /* Alamofire+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877C0C6126677D8200D82C9E /* Alamofire+PromiseKit.swift */; };
 		8F1EAD4303F2EDC55C05C1A5 /* Pods_CodeSnippet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DDD536BF16438C1612C2AB /* Pods_CodeSnippet.framework */; };
+		B095FAC626EA3B8500361490 /* NotDebuggedInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095FAC026EA3B8500361490 /* NotDebuggedInspector.swift */; };
+		B095FAC726EA3B8500361490 /* RuntimeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095FAC126EA3B8500361490 /* RuntimeContext.swift */; };
+		B095FAC826EA3B8500361490 /* RuntimeCharacteristicInspecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095FAC326EA3B8500361490 /* RuntimeCharacteristicInspecting.swift */; };
+		B095FAC926EA3B8500361490 /* RestrictiveEnvironmentInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095FAC426EA3B8500361490 /* RestrictiveEnvironmentInspector.swift */; };
+		B095FACA26EA3B8500361490 /* SysctlInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = B095FAC526EA3B8500361490 /* SysctlInspector.m */; };
 		E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BDFC2256FAA9800C03F09 /* SortDescription+App.swift */; };
 		E7784A7D2615BB4E00C8BF37 /* WeakReferenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A7A2615BB4E00C8BF37 /* WeakReferenceStorage.swift */; };
 		E7784A882615BF0C00C8BF37 /* ObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7784A872615BF0C00C8BF37 /* ObservableTests.swift */; };
 		E7B68913261F34D000AEE7DD /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B68912261F34D000AEE7DD /* ViewStyle.swift */; };
 		E7C9B88A2655329A00C9C3F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E7C9B8892655329A00C9C3F3 /* README.md */; };
-		E7C9B8A02655364300C9C3F3 /* NotDebuggedInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */; };
-		E7C9B8A12655364300C9C3F3 /* RuntimeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */; };
-		E7C9B8A22655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */; };
-		E7C9B8A32655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */; };
-		E7C9B8A42655364300C9C3F3 /* SysctlInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */; };
 		E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89325C1B3F500C0310C /* SortDescription.swift */; };
 		E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */; };
 		E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */; };
@@ -72,6 +72,12 @@
 		877C0C5A26677CFC00D82C9E /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		877C0C5B26677CFC00D82C9E /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		877C0C6126677D8200D82C9E /* Alamofire+PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+PromiseKit.swift"; sourceTree = "<group>"; };
+		B095FAC026EA3B8500361490 /* NotDebuggedInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotDebuggedInspector.swift; sourceTree = "<group>"; };
+		B095FAC126EA3B8500361490 /* RuntimeContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeContext.swift; sourceTree = "<group>"; };
+		B095FAC226EA3B8500361490 /* SysctlInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysctlInspector.h; sourceTree = "<group>"; };
+		B095FAC326EA3B8500361490 /* RuntimeCharacteristicInspecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeCharacteristicInspecting.swift; sourceTree = "<group>"; };
+		B095FAC426EA3B8500361490 /* RestrictiveEnvironmentInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictiveEnvironmentInspector.swift; sourceTree = "<group>"; };
+		B095FAC526EA3B8500361490 /* SysctlInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysctlInspector.m; sourceTree = "<group>"; };
 		B8DDD536BF16438C1612C2AB /* Pods_CodeSnippet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnippet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72BDF99256FA70000C03F09 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E72BDF9C256FA70000C03F09 /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
@@ -104,12 +110,6 @@
 		E7C9B8952655348900C9C3F3 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		E7C9B8962655348900C9C3F3 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		E7C9B8972655348A00C9C3F3 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotDebuggedInspector.swift; sourceTree = "<group>"; };
-		E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeContext.swift; sourceTree = "<group>"; };
-		E7C9B89C2655364300C9C3F3 /* SysctlInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysctlInspector.h; sourceTree = "<group>"; };
-		E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeCharacteristicInspecting.swift; sourceTree = "<group>"; };
-		E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictiveEnvironmentInspector.swift; sourceTree = "<group>"; };
-		E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysctlInspector.m; sourceTree = "<group>"; };
 		E7CFF89325C1B3F500C0310C /* SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDescription.swift; sourceTree = "<group>"; };
 		E7CFF89425C1B3F500C0310C /* Sequence+SortDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+SortDescription.swift"; sourceTree = "<group>"; };
 		E7CFF89525C1B3F500C0310C /* Sequence+LocalizedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+LocalizedOrder.swift"; sourceTree = "<group>"; };
@@ -328,12 +328,12 @@
 			children = (
 				E7C9B88826552F6700C9C3F3 /* README.md */,
 				E7C9B85A26550F1500C9C3F3 /* CodeSnippet-Bridging-Header.h */,
-				E7C9B89A2655364300C9C3F3 /* NotDebuggedInspector.swift */,
-				E7C9B89B2655364300C9C3F3 /* RuntimeContext.swift */,
-				E7C9B89C2655364300C9C3F3 /* SysctlInspector.h */,
-				E7C9B89D2655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift */,
-				E7C9B89E2655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift */,
-				E7C9B89F2655364300C9C3F3 /* SysctlInspector.m */,
+				B095FAC026EA3B8500361490 /* NotDebuggedInspector.swift */,
+				B095FAC126EA3B8500361490 /* RuntimeContext.swift */,
+				B095FAC226EA3B8500361490 /* SysctlInspector.h */,
+				B095FAC326EA3B8500361490 /* RuntimeCharacteristicInspecting.swift */,
+				B095FAC426EA3B8500361490 /* RestrictiveEnvironmentInspector.swift */,
+				B095FAC526EA3B8500361490 /* SysctlInspector.m */,
 			);
 			path = ADRuntimeContext;
 			sourceTree = "<group>";
@@ -887,41 +887,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B095FAC926EA3B8500361490 /* RestrictiveEnvironmentInspector.swift in Sources */,
 				E7CFF9D025C443E300C0310C /* View+HUD.swift in Sources */,
 				E7CFF8E025C1BB7700C0310C /* PersonListViewModel.swift in Sources */,
 				E7CFF90025C1BDDA00C0310C /* AlertActionViewModel.swift in Sources */,
 				E7CFF8AE25C1B73200C0310C /* SeparatorView.swift in Sources */,
 				E72BDFC3256FAA9800C03F09 /* SortDescription+App.swift in Sources */,
-				E7C9B8A42655364300C9C3F3 /* SysctlInspector.m in Sources */,
 				E7CFF90125C1BDDA00C0310C /* AlertPresenting.swift in Sources */,
 				E7B68913261F34D000AEE7DD /* ViewStyle.swift in Sources */,
-				E7C9B8A22655364300C9C3F3 /* RuntimeCharacteristicInspecting.swift in Sources */,
 				E7784A7D2615BB4E00C8BF37 /* WeakReferenceStorage.swift in Sources */,
 				E7CFF9A025C31B0200C0310C /* AutoSizingCollectionView.swift in Sources */,
 				E7CFF8FF25C1BDDA00C0310C /* AlertViewModel.swift in Sources */,
-				E7C9B8A32655364300C9C3F3 /* RestrictiveEnvironmentInspector.swift in Sources */,
 				E7CFF94425C1C73200C0310C /* UIImageView+ImageViewModel.swift in Sources */,
 				E7CFF9D125C443E300C0310C /* Loadable.swift in Sources */,
 				E7DEB5BB2488E21200109C0F /* AppDelegate.swift in Sources */,
 				E7CFF89625C1B3F500C0310C /* SortDescription.swift in Sources */,
 				E7CFF9F725C448AD00C0310C /* Hideable.swift in Sources */,
 				E7CFF8D525C1BAD500C0310C /* DiffableDataSource.swift in Sources */,
+				B095FAC726EA3B8500361490 /* RuntimeContext.swift in Sources */,
 				E7CFF94125C1C73200C0310C /* ImageName.swift in Sources */,
 				E7CFF94225C1C73200C0310C /* ImageViewModel.swift in Sources */,
-				E7C9B8A12655364300C9C3F3 /* RuntimeContext.swift in Sources */,
 				E7CFF8D325C1BAD500C0310C /* ListViewModel.swift in Sources */,
 				E7CFF8D425C1BAD500C0310C /* SectionViewModel.swift in Sources */,
-				E7C9B8A02655364300C9C3F3 /* NotDebuggedInspector.swift in Sources */,
 				E7CFF8FE25C1BDDA00C0310C /* UIAlertControllerFactory.swift in Sources */,
 				E7CFF9B425C43F9400C0310C /* NSManagedObjectContext+NSManagedObject.swift in Sources */,
 				877C0C6226677D8200D82C9E /* Alamofire+PromiseKit.swift in Sources */,
 				E7CFF89725C1B3F500C0310C /* Sequence+SortDescription.swift in Sources */,
 				E7CFF94325C1C73200C0310C /* ImageViewModel.ImageName+UIImage.swift in Sources */,
+				B095FAC626EA3B8500361490 /* NotDebuggedInspector.swift in Sources */,
 				E7CFF8D225C1BAD500C0310C /* VoidHeaderViewModel.swift in Sources */,
 				E7CFF9B625C43F9600C0310C /* CoreDataContainer.swift in Sources */,
 				E7CFF8D125C1BAD500C0310C /* ViewID.swift in Sources */,
+				B095FACA26EA3B8500361490 /* SysctlInspector.m in Sources */,
 				E7CFF97725C3133F00C0310C /* CSButton.swift in Sources */,
 				E7CFF9A425C31D3A00C0310C /* ViewStyle+CSButton.swift in Sources */,
+				B095FAC826EA3B8500361490 /* RuntimeCharacteristicInspecting.swift in Sources */,
 				E7CFF89825C1B3F500C0310C /* Sequence+LocalizedOrder.swift in Sources */,
 				E7CFF91225C1BE6000C0310C /* AlertPresenter.swift in Sources */,
 			);

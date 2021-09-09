@@ -1,8 +1,8 @@
 //
 //  RuntimeCharacteristicInspecting.swift
-//  CodeSnippet
+//  RuntimeContext
 //
-//  Created by Gaétan Zanella on 19/05/2021.
+//  Created by Thomas Esterlin on 09/09/2021.
 //  Copyright © 2021 Zanella. All rights reserved.
 //
 

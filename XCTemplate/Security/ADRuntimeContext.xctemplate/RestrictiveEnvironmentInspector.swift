@@ -1,13 +1,15 @@
-//
-//  RestrictiveEnvironmentInspector.swift
-//  CodeSnippet
-//
-//  Created by Gaétan Zanella on 18/05/2021.
-//  Copyright © 2021 Zanella. All rights reserved.
-//
+//___FILEHEADER___
 
 import Foundation
 import UIKit
+
+extension RestrictiveEnvironmentInspector {
+    enum Error: Swift.Error {
+        case unauthorizedFileAccess
+        case unauthorizedFilePermissions
+        case canOpenPackageURL
+    }
+}
 
 struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
 
@@ -23,15 +25,22 @@ struct RestrictiveEnvironmentInspector: RuntimeCharacteristicInspecting {
 
     // MARK: - RuntimeCharacteristicInspecting
 
-    func isSatisfied() -> Bool {
-        hasUnauthorizedFileAccess()
-            || hasUnauthorizedFilePermissions()
-            || canOpenPackageURL()
+    func satisfy() throws {
+        if hasUnauthorizedFileAccess() {
+            throw Error.unauthorizedFileAccess
+        }
+        if hasUnauthorizedFilePermissions() {
+            throw Error.unauthorizedFilePermissions
+        }
+        if canOpenPackageURL() {
+            throw Error.canOpenPackageURL
+        }
     }
 
     // MARK: - Private
 
     // https://github.com/OWASP/owasp-mstg/blob/master/Document/0x06j-Testing-Resiliency-Against-Reverse-Engineering.md#file-based-checks
+    // swiftlint:disable function_body_length
     private func hasUnauthorizedFileAccess() -> Bool {
         let list = [
             "/Applications/Cydia.app",
